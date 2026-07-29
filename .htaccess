@@ -1,14 +1,9 @@
-Options -MultiViews
+Options +FollowSymLinks -MultiViews
+DirectoryIndex index.html
+
 RewriteEngine On
 
-# Map clean URLs to HTML files
-RewriteRule ^about-us/?$ about.html [L,QSA]
-RewriteRule ^contact-us/?$ contact.html [L,QSA]
-RewriteRule ^products/?$ products.html [L,QSA]
-RewriteRule ^gallery/?$ gallery.html [L,QSA]
-RewriteRule ^product-details/?$ product-details.html [L,QSA]
-
-# Automatically strip .html extension
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME}\.html -f
-RewriteRule ^([^\.]+)/?$ $1.html [L,QSA]
+# Ensure trailing slash for directory index routing
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteCond %{REQUEST_URI} !(.*)/$
+RewriteRule ^(.*)$ /$1/ [L,R=301]

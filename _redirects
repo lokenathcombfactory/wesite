@@ -1,5 +1,5 @@
-/about-us  /about.html  200
-/contact-us  /contact.html  200
-/products  /products.html  200
-/gallery  /gallery.html  200
-/product-details  /product-details.html  200
+/about-us  /about-us/  301
+/contact-us  /contact-us/  301
+/products  /products/  301
+/gallery  /gallery/  301
+/product-details  /product-details/  301
