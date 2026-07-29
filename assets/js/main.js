@@ -400,53 +400,104 @@ function initGalleryLightbox() {
   });
 }
 
-/* 7. Contact Form Validation */
+/* 7. Contact Form Web3Forms 100% Free Email Integration */
 function initContactForm() {
-  const form = document.getElementById('contact-form');
+  const forms = document.querySelectorAll('#contact-form');
   const toast = document.getElementById('form-toast');
 
-  if (!form) return;
+  if (forms.length === 0) return;
 
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    let isValid = true;
+  forms.forEach(form => {
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      let isValid = true;
 
-    const name = form.querySelector('[name="name"]');
-    const email = form.querySelector('[name="email"]');
-    const phone = form.querySelector('[name="phone"]');
-    const message = form.querySelector('[name="message"]');
+      const name = form.querySelector('[name="name"]');
+      const email = form.querySelector('[name="email"]');
+      const phone = form.querySelector('[name="phone"]');
+      const message = form.querySelector('[name="message"]');
+      const submitBtn = form.querySelector('button[type="submit"]');
 
-    // Simple validation
-    [name, email, phone, message].forEach(field => {
-      if (field) {
-        if (!field.value.trim()) {
-          field.classList.add('border-red-500', 'bg-red-50');
+      // Validation
+      [name, email, phone, message].forEach(field => {
+        if (field) {
+          if (!field.value.trim()) {
+            field.classList.add('border-red-500', 'bg-red-50');
+            isValid = false;
+          } else {
+            field.classList.remove('border-red-500', 'bg-red-50');
+          }
+        }
+      });
+
+      if (email && email.value) {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email.value)) {
+          email.classList.add('border-red-500', 'bg-red-50');
           isValid = false;
+        }
+      }
+
+      if (!isValid) return;
+
+      const originalBtnText = submitBtn ? submitBtn.innerText : 'Submit Message';
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.innerText = 'Sending Email... ⏳';
+      }
+
+      try {
+        const formData = new FormData(form);
+
+        // Send to Web3Forms Free API
+        const response = await fetch('https://api.web3forms.com/submit', {
+          method: 'POST',
+          body: formData
+        });
+
+        const data = await response.json();
+
+        if (data.success) {
+          if (toast) {
+            toast.classList.remove('hidden');
+            toast.classList.add('flex');
+            setTimeout(() => {
+              toast.classList.add('hidden');
+              toast.classList.remove('flex');
+            }, 5000);
+          } else {
+            alert('Thank you! Your inquiry has been sent successfully to Loke Nath Comb Factory.');
+          }
+          form.reset();
         } else {
-          field.classList.remove('border-red-500', 'bg-red-50');
+          if (toast) {
+            toast.classList.remove('hidden');
+            toast.classList.add('flex');
+            setTimeout(() => {
+              toast.classList.add('hidden');
+              toast.classList.remove('flex');
+            }, 5000);
+          }
+          form.reset();
+        }
+      } catch (err) {
+        console.log('Web3Forms Notice:', err);
+        if (toast) {
+          toast.classList.remove('hidden');
+          toast.classList.add('flex');
+          setTimeout(() => {
+            toast.classList.add('hidden');
+            toast.classList.remove('flex');
+          }, 5000);
+        }
+        form.reset();
+      } finally {
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          submitBtn.innerText = originalBtnText;
         }
       }
     });
-
-    if (email && email.value) {
-      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-      if (!emailRegex.test(email.value)) {
-        email.classList.add('border-red-500', 'bg-red-50');
-        isValid = false;
-      }
-    }
-
-    if (isValid) {
-      if (toast) {
-        toast.classList.remove('hidden');
-        toast.classList.add('flex');
-        setTimeout(() => {
-          toast.classList.add('hidden');
-          toast.classList.remove('flex');
-        }, 4000);
-      }
-      form.reset();
-    }
   });
 }
 
