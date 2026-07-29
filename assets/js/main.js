@@ -402,8 +402,9 @@ function initGalleryLightbox() {
 
 /* 7. Contact Form Web3Forms 100% Free Email Integration */
 function initContactForm() {
-  const forms = document.querySelectorAll('#contact-form');
-  const toast = document.getElementById('form-toast');
+  const forms = document.querySelectorAll('form[action*="web3forms.com"], #contact-form');
+  const toastSuccess = document.getElementById('form-toast');
+  const toastError = document.getElementById('form-error-toast');
 
   if (forms.length === 0) return;
 
@@ -448,49 +449,53 @@ function initContactForm() {
 
       try {
         const formData = new FormData(form);
+        const object = Object.fromEntries(formData);
+        const json = JSON.stringify(object);
 
-        // Send to Web3Forms Free API
+        // Send to Web3Forms Free API via JSON
         const response = await fetch('https://api.web3forms.com/submit', {
           method: 'POST',
-          body: formData
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          },
+          body: json
         });
 
         const data = await response.json();
 
         if (data.success) {
-          if (toast) {
-            toast.classList.remove('hidden');
-            toast.classList.add('flex');
+          if (toastSuccess) {
+            toastSuccess.classList.remove('hidden');
+            toastSuccess.classList.add('flex');
             setTimeout(() => {
-              toast.classList.add('hidden');
-              toast.classList.remove('flex');
+              toastSuccess.classList.add('hidden');
+              toastSuccess.classList.remove('flex');
             }, 5000);
           } else {
             alert('Thank you! Your inquiry has been sent successfully to Loke Nath Comb Factory.');
           }
           form.reset();
         } else {
-          if (toast) {
-            toast.classList.remove('hidden');
-            toast.classList.add('flex');
+          console.error('Web3Forms Response Error:', data);
+          const errorMsg = data.message || 'Form submission failed. Please try again.';
+          
+          if (toastError) {
+            const errorText = toastError.querySelector('.error-msg-text');
+            if (errorText) errorText.innerText = errorMsg;
+            toastError.classList.remove('hidden');
+            toastError.classList.add('flex');
             setTimeout(() => {
-              toast.classList.add('hidden');
-              toast.classList.remove('flex');
-            }, 5000);
+              toastError.classList.add('hidden');
+              toastError.classList.remove('flex');
+            }, 7000);
+          } else {
+            alert('Form Submission Notice: ' + errorMsg + '\n\nNote: If using a new Web3Forms access key, please check lokenathcombfactory@gmail.com inbox and click the Web3Forms activation link.');
           }
-          form.reset();
         }
       } catch (err) {
-        console.log('Web3Forms Notice:', err);
-        if (toast) {
-          toast.classList.remove('hidden');
-          toast.classList.add('flex');
-          setTimeout(() => {
-            toast.classList.add('hidden');
-            toast.classList.remove('flex');
-          }, 5000);
-        }
-        form.reset();
+        console.error('Web3Forms Fetch Error:', err);
+        alert('Network Error submitting form. Please call +91 8882231160 or email lokenathcombfactory@gmail.com directly.');
       } finally {
         if (submitBtn) {
           submitBtn.disabled = false;
