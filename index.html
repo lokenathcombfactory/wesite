@@ -421,159 +421,164 @@
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
           </svg>
         </a>
-      <!-- Category Filter Tabs Container -->
-      <div class="relative max-w-full mb-8 group">
-        <!-- Left Scroll Control Button -->
-        <button id="filter-scroll-left" type="button" aria-label="Scroll Left"
-          class="hidden sm:flex absolute -left-3 top-1/2 -translate-y-1/2 z-20 w-8 h-8 items-center justify-center rounded-full bg-white text-gray-700 shadow-md hover:bg-brand-primary hover:text-white transition border border-gray-200 focus:outline-none">
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7" />
-          </svg>
-        </button>
+        <!-- Category Filter Tabs Container -->
+        <div class="relative max-w-full mb-8 group">
+          <!-- Left Scroll Control Button -->
+          <button id="filter-scroll-left" type="button" aria-label="Scroll Left"
+            class="hidden sm:flex absolute -left-3 top-1/2 -translate-y-1/2 z-20 w-8 h-8 items-center justify-center rounded-full bg-white text-gray-700 shadow-md hover:bg-brand-primary hover:text-white transition border border-gray-200 focus:outline-none">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M15 19l-7-7 7-7" />
+            </svg>
+          </button>
 
-        <!-- Left Gradient Indicator -->
-        <div class="pointer-events-none absolute left-0 top-0 bottom-0 w-8 bg-gradient-to-r from-brand-gray to-transparent z-10 rounded-l-full"></div>
+          <!-- Left Gradient Indicator -->
+          <div
+            class="pointer-events-none absolute left-0 top-0 bottom-0 w-8 bg-gradient-to-r from-brand-gray to-transparent z-10 rounded-l-full">
+          </div>
 
-        <!-- Horizontally Scrollable Category Pills -->
-        <div id="filter-tabs-nav" class="flex items-center gap-2.5 overflow-x-auto py-2 px-2 scroll-smooth no-scrollbar snap-x snap-mandatory">
-          <button
-            class="product-filter-btn shrink-0 touch-target px-5 py-2.5 rounded-full text-sm font-semibold whitespace-nowrap bg-brand-primary text-white shadow-md snap-start"
-            data-filter="all">All Products</button>
-          <button
-            class="product-filter-btn shrink-0 touch-target px-5 py-2.5 rounded-full text-sm font-semibold whitespace-nowrap bg-white text-gray-700 hover:bg-pink-50 hover:text-brand-primary transition border border-gray-200 shadow-sm snap-start"
-            data-filter="wooden">Wooden Comb</button>
-          <button
-            class="product-filter-btn shrink-0 touch-target px-5 py-2.5 rounded-full text-sm font-semibold whitespace-nowrap bg-white text-gray-700 hover:bg-pink-50 hover:text-brand-primary transition border border-gray-200 shadow-sm snap-start"
-            data-filter="pocket">Pocket Comb</button>
-          <button
-            class="product-filter-btn shrink-0 touch-target px-5 py-2.5 rounded-full text-sm font-semibold whitespace-nowrap bg-white text-gray-700 hover:bg-pink-50 hover:text-brand-primary transition border border-gray-200 shadow-sm snap-start"
-            data-filter="ladies">Ladies Comb</button>
-          <button
-            class="product-filter-btn shrink-0 touch-target px-5 py-2.5 rounded-full text-sm font-semibold whitespace-nowrap bg-white text-gray-700 hover:bg-pink-50 hover:text-brand-primary transition border border-gray-200 shadow-sm snap-start"
-            data-filter="family">Family Pack</button>
-          <button
-            class="product-filter-btn shrink-0 touch-target px-5 py-2.5 rounded-full text-sm font-semibold whitespace-nowrap bg-white text-gray-700 hover:bg-pink-50 hover:text-brand-primary transition border border-gray-200 shadow-sm snap-start"
-            data-filter="hair">Hair Brushes</button>
+          <!-- Horizontally Scrollable Category Pills -->
+          <div id="filter-tabs-nav"
+            class="flex items-center gap-2.5 overflow-x-auto py-2 px-2 scroll-smooth no-scrollbar snap-x snap-mandatory">
+            <button
+              class="product-filter-btn shrink-0 touch-target px-5 py-2.5 rounded-full text-sm font-semibold whitespace-nowrap bg-brand-primary text-white shadow-md snap-start"
+              data-filter="all">All Products</button>
+            <button
+              class="product-filter-btn shrink-0 touch-target px-5 py-2.5 rounded-full text-sm font-semibold whitespace-nowrap bg-white text-gray-700 hover:bg-pink-50 hover:text-brand-primary transition border border-gray-200 shadow-sm snap-start"
+              data-filter="wooden">Wooden Comb</button>
+            <button
+              class="product-filter-btn shrink-0 touch-target px-5 py-2.5 rounded-full text-sm font-semibold whitespace-nowrap bg-white text-gray-700 hover:bg-pink-50 hover:text-brand-primary transition border border-gray-200 shadow-sm snap-start"
+              data-filter="pocket">Pocket Comb</button>
+            <button
+              class="product-filter-btn shrink-0 touch-target px-5 py-2.5 rounded-full text-sm font-semibold whitespace-nowrap bg-white text-gray-700 hover:bg-pink-50 hover:text-brand-primary transition border border-gray-200 shadow-sm snap-start"
+              data-filter="ladies">Ladies Comb</button>
+            <button
+              class="product-filter-btn shrink-0 touch-target px-5 py-2.5 rounded-full text-sm font-semibold whitespace-nowrap bg-white text-gray-700 hover:bg-pink-50 hover:text-brand-primary transition border border-gray-200 shadow-sm snap-start"
+              data-filter="family">Family Pack</button>
+            <button
+              class="product-filter-btn shrink-0 touch-target px-5 py-2.5 rounded-full text-sm font-semibold whitespace-nowrap bg-white text-gray-700 hover:bg-pink-50 hover:text-brand-primary transition border border-gray-200 shadow-sm snap-start"
+              data-filter="hair">Hair Brushes</button>
+          </div>
+
+          <!-- Right Gradient Indicator -->
+          <div
+            class="pointer-events-none absolute right-0 top-0 bottom-0 w-8 bg-gradient-to-l from-brand-gray to-transparent z-10 rounded-r-full">
+          </div>
+
+          <!-- Right Scroll Control Button -->
+          <button id="filter-scroll-right" type="button" aria-label="Scroll Right"
+            class="hidden sm:flex absolute -right-3 top-1/2 -translate-y-1/2 z-20 w-8 h-8 items-center justify-center rounded-full bg-white text-gray-700 shadow-md hover:bg-brand-primary hover:text-white transition border border-gray-200 focus:outline-none">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7" />
+            </svg>
+          </button>
         </div>
 
-        <!-- Right Gradient Indicator -->
-        <div class="pointer-events-none absolute right-0 top-0 bottom-0 w-8 bg-gradient-to-l from-brand-gray to-transparent z-10 rounded-r-full"></div>
+        <!-- Grid of Cards -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Card 1 -->
+          <div
+            class="product-card bg-white rounded-2xl overflow-hidden shadow border border-gray-100 flex flex-col justify-between product-item-card"
+            data-title="Wooden Comb Collection" data-category-name="Wooden Comb"
+            data-desc="Natural eco-friendly wooden comb crafted for static reduction and scalp health."
+            data-specs="Material: Natural Neem/Rosewood | Teeth: Wide & Fine | Anti-Static: Yes">
+            <div>
+              <div class="h-48 bg-gray-100 overflow-hidden relative">
+                <img src="https://images.unsplash.com/photo-1590159763121-7c9df3121905?auto=format&fit=crop&w=600&q=80"
+                  alt="Wooden Comb" class="w-full h-full object-cover transition transform hover:scale-105">
+                <span
+                  class="absolute top-3 right-3 bg-brand-primary text-white text-xs font-semibold px-2.5 py-1 rounded">Popular</span>
+              </div>
+              <div class="p-5">
+                <span class="text-xs text-brand-primary font-semibold uppercase tracking-wider">Natural Care</span>
+                <h3 class="text-lg font-bold font-heading text-gray-900 mt-1">Wooden Comb</h3>
+                <p class="text-gray-500 text-xs mt-2 line-clamp-2">Promotes healthy scalp circulation, prevents static
+                  electricity, and minimizes hair breakage.</p>
+              </div>
+            </div>
+            <div class="p-5 pt-0">
+              <button
+                class="product-quick-view-btn w-full touch-target bg-brand-light text-brand-primary hover:bg-brand-primary hover:text-white font-medium text-sm py-2 rounded-lg transition">Quick
+                View & Inquiry</button>
+            </div>
+          </div>
 
-        <!-- Right Scroll Control Button -->
-        <button id="filter-scroll-right" type="button" aria-label="Scroll Right"
-          class="hidden sm:flex absolute -right-3 top-1/2 -translate-y-1/2 z-20 w-8 h-8 items-center justify-center rounded-full bg-white text-gray-700 shadow-md hover:bg-brand-primary hover:text-white transition border border-gray-200 focus:outline-none">
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7" />
-          </svg>
-        </button>
+          <!-- Card 2 -->
+          <div
+            class="product-card bg-white rounded-2xl overflow-hidden shadow border border-gray-100 flex flex-col justify-between product-item-card"
+            data-title="Pocket Comb Series" data-category-name="Pocket Comb"
+            data-desc="Compact pocket combs easy to carry everywhere for quick daily touch-ups."
+            data-specs="Material: Virgin Plastic | Size: 5 to 6 inch | Colors: Black, Brown, Amber">
+            <div>
+              <div class="h-48 bg-gray-100 overflow-hidden relative">
+                <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=600&q=80"
+                  alt="Pocket Comb" class="w-full h-full object-cover transition transform hover:scale-105">
+              </div>
+              <div class="p-5">
+                <span class="text-xs text-brand-primary font-semibold uppercase tracking-wider">Everyday Grooming</span>
+                <h3 class="text-lg font-bold font-heading text-gray-900 mt-1">Pocket Comb</h3>
+                <p class="text-gray-500 text-xs mt-2 line-clamp-2">Convenient compact design ideal for travel, purse, or
+                  pocket use with smooth finish teeth.</p>
+              </div>
+            </div>
+            <div class="p-5 pt-0">
+              <button
+                class="product-quick-view-btn w-full touch-target bg-brand-light text-brand-primary hover:bg-brand-primary hover:text-white font-medium text-sm py-2 rounded-lg transition">Quick
+                View & Inquiry</button>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div
+            class="product-card bg-white rounded-2xl overflow-hidden shadow border border-gray-100 flex flex-col justify-between product-item-card"
+            data-title="Professional Salon Comb" data-category-name="Salon Comb"
+            data-desc="High precision salon combs for professional barbers and hairstylists."
+            data-specs="Material: Heat Resistant Carbon/Polymer | Features: Fine teeth, Sectioning tail | Usage: Styling & Cutting">
+            <div>
+              <div class="h-48 bg-gray-100 overflow-hidden relative">
+                <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=600&q=80"
+                  alt="Salon Comb" class="w-full h-full object-cover transition transform hover:scale-105">
+              </div>
+              <div class="p-5">
+                <span class="text-xs text-brand-primary font-semibold uppercase tracking-wider">Professional Line</span>
+                <h3 class="text-lg font-bold font-heading text-gray-900 mt-1">Salon Comb</h3>
+                <p class="text-gray-500 text-xs mt-2 line-clamp-2">Designed specifically for hair stylists, sectioning,
+                  hair coloring, and precise hair cutting.</p>
+              </div>
+            </div>
+            <div class="p-5 pt-0">
+              <button
+                class="product-quick-view-btn w-full touch-target bg-brand-light text-brand-primary hover:bg-brand-primary hover:text-white font-medium text-sm py-2 rounded-lg transition">Quick
+                View & Inquiry</button>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div
+            class="product-card bg-white rounded-2xl overflow-hidden shadow border border-gray-100 flex flex-col justify-between product-item-card"
+            data-title="Hotel Hygiene Comb" data-category-name="Hotel Comb"
+            data-desc="Individually wrapped hygienic hotel amenity combs for luxury hospitality."
+            data-specs="Material: Eco Plastic / Bamboo Plastic | Packaging: Individual Poly/Paper Wrap | MOQ: Bulk 5000+">
+            <div>
+              <div class="h-48 bg-gray-100 overflow-hidden relative">
+                <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=600&q=80"
+                  alt="Hotel Comb" class="w-full h-full object-cover transition transform hover:scale-105">
+              </div>
+              <div class="p-5">
+                <span class="text-xs text-brand-primary font-semibold uppercase tracking-wider">Hospitality
+                  Amenities</span>
+                <h3 class="text-lg font-bold font-heading text-gray-900 mt-1">Best Hotel Comb</h3>
+                <p class="text-gray-500 text-xs mt-2 line-clamp-2">Bulk hotel combs customized with logo packaging for
+                  luxury guest rooms & resort kits.</p>
+              </div>
+            </div>
+            <div class="p-5 pt-0">
+              <button
+                class="product-quick-view-btn w-full touch-target bg-brand-light text-brand-primary hover:bg-brand-primary hover:text-white font-medium text-sm py-2 rounded-lg transition">Quick
+                View & Inquiry</button>
+            </div>
+          </div>
+        </div>
       </div>
-
-      <!-- Grid of Cards -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        <!-- Card 1 -->
-        <div
-          class="product-card bg-white rounded-2xl overflow-hidden shadow border border-gray-100 flex flex-col justify-between product-item-card"
-          data-title="Wooden Comb Collection" data-category-name="Wooden Comb"
-          data-desc="Natural eco-friendly wooden comb crafted for static reduction and scalp health."
-          data-specs="Material: Natural Neem/Rosewood | Teeth: Wide & Fine | Anti-Static: Yes">
-          <div>
-            <div class="h-48 bg-gray-100 overflow-hidden relative">
-              <img src="https://images.unsplash.com/photo-1590159763121-7c9df3121905?auto=format&fit=crop&w=600&q=80"
-                alt="Wooden Comb" class="w-full h-full object-cover transition transform hover:scale-105">
-              <span
-                class="absolute top-3 right-3 bg-brand-primary text-white text-xs font-semibold px-2.5 py-1 rounded">Popular</span>
-            </div>
-            <div class="p-5">
-              <span class="text-xs text-brand-primary font-semibold uppercase tracking-wider">Natural Care</span>
-              <h3 class="text-lg font-bold font-heading text-gray-900 mt-1">Wooden Comb</h3>
-              <p class="text-gray-500 text-xs mt-2 line-clamp-2">Promotes healthy scalp circulation, prevents static
-                electricity, and minimizes hair breakage.</p>
-            </div>
-          </div>
-          <div class="p-5 pt-0">
-            <button
-              class="product-quick-view-btn w-full touch-target bg-brand-light text-brand-primary hover:bg-brand-primary hover:text-white font-medium text-sm py-2 rounded-lg transition">Quick
-              View & Inquiry</button>
-          </div>
-        </div>
-
-        <!-- Card 2 -->
-        <div
-          class="product-card bg-white rounded-2xl overflow-hidden shadow border border-gray-100 flex flex-col justify-between product-item-card"
-          data-title="Pocket Comb Series" data-category-name="Pocket Comb"
-          data-desc="Compact pocket combs easy to carry everywhere for quick daily touch-ups."
-          data-specs="Material: Virgin Plastic | Size: 5 to 6 inch | Colors: Black, Brown, Amber">
-          <div>
-            <div class="h-48 bg-gray-100 overflow-hidden relative">
-              <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=600&q=80"
-                alt="Pocket Comb" class="w-full h-full object-cover transition transform hover:scale-105">
-            </div>
-            <div class="p-5">
-              <span class="text-xs text-brand-primary font-semibold uppercase tracking-wider">Everyday Grooming</span>
-              <h3 class="text-lg font-bold font-heading text-gray-900 mt-1">Pocket Comb</h3>
-              <p class="text-gray-500 text-xs mt-2 line-clamp-2">Convenient compact design ideal for travel, purse, or
-                pocket use with smooth finish teeth.</p>
-            </div>
-          </div>
-          <div class="p-5 pt-0">
-            <button
-              class="product-quick-view-btn w-full touch-target bg-brand-light text-brand-primary hover:bg-brand-primary hover:text-white font-medium text-sm py-2 rounded-lg transition">Quick
-              View & Inquiry</button>
-          </div>
-        </div>
-
-        <!-- Card 3 -->
-        <div
-          class="product-card bg-white rounded-2xl overflow-hidden shadow border border-gray-100 flex flex-col justify-between product-item-card"
-          data-title="Professional Salon Comb" data-category-name="Salon Comb"
-          data-desc="High precision salon combs for professional barbers and hairstylists."
-          data-specs="Material: Heat Resistant Carbon/Polymer | Features: Fine teeth, Sectioning tail | Usage: Styling & Cutting">
-          <div>
-            <div class="h-48 bg-gray-100 overflow-hidden relative">
-              <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=600&q=80"
-                alt="Salon Comb" class="w-full h-full object-cover transition transform hover:scale-105">
-            </div>
-            <div class="p-5">
-              <span class="text-xs text-brand-primary font-semibold uppercase tracking-wider">Professional Line</span>
-              <h3 class="text-lg font-bold font-heading text-gray-900 mt-1">Salon Comb</h3>
-              <p class="text-gray-500 text-xs mt-2 line-clamp-2">Designed specifically for hair stylists, sectioning,
-                hair coloring, and precise hair cutting.</p>
-            </div>
-          </div>
-          <div class="p-5 pt-0">
-            <button
-              class="product-quick-view-btn w-full touch-target bg-brand-light text-brand-primary hover:bg-brand-primary hover:text-white font-medium text-sm py-2 rounded-lg transition">Quick
-              View & Inquiry</button>
-          </div>
-        </div>
-
-        <!-- Card 4 -->
-        <div
-          class="product-card bg-white rounded-2xl overflow-hidden shadow border border-gray-100 flex flex-col justify-between product-item-card"
-          data-title="Hotel Hygiene Comb" data-category-name="Hotel Comb"
-          data-desc="Individually wrapped hygienic hotel amenity combs for luxury hospitality."
-          data-specs="Material: Eco Plastic / Bamboo Plastic | Packaging: Individual Poly/Paper Wrap | MOQ: Bulk 5000+">
-          <div>
-            <div class="h-48 bg-gray-100 overflow-hidden relative">
-              <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=600&q=80"
-                alt="Hotel Comb" class="w-full h-full object-cover transition transform hover:scale-105">
-            </div>
-            <div class="p-5">
-              <span class="text-xs text-brand-primary font-semibold uppercase tracking-wider">Hospitality
-                Amenities</span>
-              <h3 class="text-lg font-bold font-heading text-gray-900 mt-1">Best Hotel Comb</h3>
-              <p class="text-gray-500 text-xs mt-2 line-clamp-2">Bulk hotel combs customized with logo packaging for
-                luxury guest rooms & resort kits.</p>
-            </div>
-          </div>
-          <div class="p-5 pt-0">
-            <button
-              class="product-quick-view-btn w-full touch-target bg-brand-light text-brand-primary hover:bg-brand-primary hover:text-white font-medium text-sm py-2 rounded-lg transition">Quick
-              View & Inquiry</button>
-          </div>
-        </div>
-      </div>
-    </div>
   </section>
 
   <!-- 8. OEM / ODM 8-STEP MANUFACTURING PROCESS -->

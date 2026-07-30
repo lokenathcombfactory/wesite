@@ -519,7 +519,7 @@ function initContactForm() {
         } else {
           console.error('Web3Forms Response Error:', data);
           const errorMsg = data.message || 'Form submission failed. Please try again.';
-          
+
           if (toastError) {
             const errorText = toastError.querySelector('.error-msg-text');
             if (errorText) errorText.innerText = errorMsg;
@@ -1003,7 +1003,7 @@ function initProductDetailPage() {
   // Parse URL query ?cat=...
   const urlParams = new URLSearchParams(window.location.search);
   const catParam = (urlParams.get('cat') || 'ladies').toLowerCase();
-  
+
   let initialKey = "ladies";
   if (catParam.includes("wood")) initialKey = "wooden";
   else if (catParam.includes("pocket")) initialKey = "pocket";
