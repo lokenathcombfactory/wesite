@@ -1,0 +1,6 @@
+# robots.txt for Loke Nath Comb Factory
+User-agent: *
+Allow: /
+
+# Sitemap Location
+Sitemap: https://lokenathcombfactory.com/sitemap.xml
