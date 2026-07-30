@@ -3,4 +3,4 @@ User-agent: *
 Allow: /
 
 # Sitemap Location
-Sitemap: https://lokenathcombfactory.com/sitemap.xml
+Sitemap: https://lokenathcombfactory.vercel.app/sitemap.xml
