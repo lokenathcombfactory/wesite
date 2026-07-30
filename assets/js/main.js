@@ -296,12 +296,15 @@ function initCounters() {
   counters.forEach(c => observer.observe(c));
 }
 
-/* 5. Product Category Filtering */
+/* 5. Product Category Filtering & Scrollable Navbar */
 function initProductFilter() {
   const filterBtns = document.querySelectorAll('.product-filter-btn');
   const productCards = document.querySelectorAll('.product-item-card');
+  const navContainer = document.getElementById('filter-tabs-nav');
+  const scrollLeftBtn = document.getElementById('filter-scroll-left');
+  const scrollRightBtn = document.getElementById('filter-scroll-right');
 
-  if (filterBtns.length === 0 || productCards.length === 0) return;
+  if (filterBtns.length === 0) return;
 
   filterBtns.forEach(btn => {
     btn.addEventListener('click', () => {
@@ -309,25 +312,62 @@ function initProductFilter() {
 
       // Update active button state
       filterBtns.forEach(b => {
-        b.classList.remove('bg-brand-primary', 'text-white');
-        b.classList.add('bg-white', 'text-gray-700', 'hover:bg-pink-50');
+        b.classList.remove('bg-brand-primary', 'text-white', 'shadow-md', 'scale-[1.02]');
+        b.classList.add('bg-white', 'text-gray-700', 'hover:bg-pink-50', 'hover:text-brand-primary', 'border', 'border-gray-200', 'shadow-sm');
       });
-      btn.classList.remove('bg-white', 'text-gray-700', 'hover:bg-pink-50');
-      btn.classList.add('bg-brand-primary', 'text-white');
+      btn.classList.remove('bg-white', 'text-gray-700', 'hover:bg-pink-50', 'hover:text-brand-primary', 'border', 'border-gray-200', 'shadow-sm');
+      btn.classList.add('bg-brand-primary', 'text-white', 'shadow-md', 'scale-[1.02]');
 
-      // Filter grid
-      productCards.forEach(card => {
-        const cardCat = card.getAttribute('data-category');
-        if (category === 'all' || cardCat === category) {
-          card.classList.remove('hidden');
-          card.classList.add('block', 'animate-modal');
-        } else {
-          card.classList.add('hidden');
-          card.classList.remove('block');
-        }
-      });
+      // Smoothly scroll active button to center of view
+      btn.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+
+      // Filter grid items if grid exists
+      if (productCards.length > 0) {
+        productCards.forEach(card => {
+          const cardCat = card.getAttribute('data-category') || card.getAttribute('data-category-name');
+          if (!category || category === 'all' || cardCat === category || (cardCat && cardCat.toLowerCase().includes(category.toLowerCase()))) {
+            card.classList.remove('hidden');
+            card.classList.add('block', 'animate-modal');
+          } else {
+            card.classList.add('hidden');
+            card.classList.remove('block');
+          }
+        });
+      }
     });
   });
+
+  // Left & Right Scroll Arrow Controls
+  if (navContainer) {
+    if (scrollLeftBtn) {
+      scrollLeftBtn.addEventListener('click', () => {
+        navContainer.scrollBy({ left: -220, behavior: 'smooth' });
+      });
+    }
+    if (scrollRightBtn) {
+      scrollRightBtn.addEventListener('click', () => {
+        navContainer.scrollBy({ left: 220, behavior: 'smooth' });
+      });
+    }
+
+    // Touch/Mouse drag to scroll enhancement for desktop
+    let isDown = false;
+    let startX, scrollLeft;
+    navContainer.addEventListener('mousedown', (e) => {
+      isDown = true;
+      startX = e.pageX - navContainer.offsetLeft;
+      scrollLeft = navContainer.scrollLeft;
+    });
+    navContainer.addEventListener('mouseleave', () => { isDown = false; });
+    navContainer.addEventListener('mouseup', () => { isDown = false; });
+    navContainer.addEventListener('mousemove', (e) => {
+      if (!isDown) return;
+      e.preventDefault();
+      const x = e.pageX - navContainer.offsetLeft;
+      const walk = (x - startX) * 1.5;
+      navContainer.scrollLeft = scrollLeft - walk;
+    });
+  }
 }
 
 /* 6. Gallery Lightbox Modal */
