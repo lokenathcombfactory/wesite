@@ -535,7 +535,7 @@ function initContactForm() {
         }
       } catch (err) {
         console.error('Web3Forms Fetch Error:', err);
-        alert('Network Error submitting form. Please call +91 8882231160 or email lokenathcombfactory@gmail.com directly.');
+        alert('Network Error submitting form. Please call +91 0000000000 or email lokenathcombfactory@gmail.com directly.');
       } finally {
         if (submitBtn) {
           submitBtn.disabled = false;
