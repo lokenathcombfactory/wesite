@@ -35,6 +35,26 @@
 
 <body class="bg-white text-gray-800 antialiased selection:bg-brand-primary selection:text-white">
 
+  <!-- 0. WEBSITE UNDER PROGRESS NOTIFICATION BAR -->
+  <div id="under-progress-banner" class="bg-gradient-to-r from-amber-500 via-amber-400 to-amber-500 text-slate-950 py-2 px-4 text-xs sm:text-sm font-medium relative z-[60] shadow-md border-b border-amber-600/30">
+    <div class="container mx-auto flex items-center justify-between gap-3">
+      <div class="flex items-center gap-2.5 mx-auto sm:mx-0 text-center sm:text-left flex-wrap sm:flex-nowrap justify-center">
+        <span class="inline-flex items-center justify-center bg-slate-900 text-amber-300 text-[11px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider shadow-sm shrink-0">
+          <span class="w-2 h-2 rounded-full bg-amber-400 inline-block mr-1.5 animate-pulse"></span>
+          Under Progress
+        </span>
+        <span class="text-slate-950 font-semibold">
+          Notice: This website is currently under progress. Features and content are being updated!
+        </span>
+      </div>
+      <button id="close-progress-banner" type="button" class="text-slate-900/80 hover:text-slate-950 hover:bg-amber-600/20 p-1 rounded-full transition-colors shrink-0 cursor-pointer" aria-label="Close notification">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+
   <!-- MARQUEE BAR -->
   <div class="bg-brand-primary text-white py-1.5 text-xs sm:text-sm overflow-hidden relative z-50">
     <div class="container mx-auto px-4 flex items-center justify-between">
@@ -194,17 +214,31 @@
             <input type="hidden" name="access_key" value="60b3af05-e93b-4acf-9a45-80c8166b1072">
             <input type="hidden" name="subject" value="New Inquiry - Loke Nath Comb Factory">
             <input type="hidden" name="from_name" value="Loke Nath Comb Factory Inquiry Desk">
+
+            <!-- Google Authentication Quick Fill & Verification -->
+            <div class="bg-white p-3.5 rounded-xl border border-gray-200 shadow-sm mb-4">
+              <div class="flex items-center justify-between gap-2 mb-2">
+                <span class="text-xs font-semibold text-gray-800 flex items-center gap-1.5">
+                  <svg class="w-4 h-4 text-brand-primary" fill="currentColor" viewBox="0 0 24 24"><path d="M12.545,10.239v3.821h5.445c-0.712,2.315-2.647,3.972-5.445,3.972c-3.332,0-6.033-2.701-6.033-6.032 s2.701-6.032,6.033-6.032c1.498,0,2.866,0.549,3.921,1.453l2.814-2.814C17.503,2.988,15.139,2,12.545,2 C7.021,2,2.543,6.477,2.543,12s4.478,10,10.002,10c8.396,0,10.249-7.85,9.426-11.761H12.545z"/></svg>
+                  Quick Sign-In & Verification
+                </span>
+                <span class="text-[11px] text-green-700 bg-green-50 px-2 py-0.5 rounded font-medium border border-green-100">🔒 Verified Google ID</span>
+              </div>
+              <div id="google-auth-button-container" class="flex justify-center sm:justify-start"></div>
+              <div id="google-auth-user-badge" class="hidden"></div>
+            </div>
+
             <div>
               <label class="block text-xs font-semibold text-gray-700 uppercase mb-1">Your Full Name *</label>
-              <input type="text" name="name" required placeholder="John Doe"
-                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-primary outline-none transition text-sm">
+              <input type="text" name="name" required readonly placeholder="🔒 Auto-filled via Google Sign-In"
+                class="w-full px-4 py-3 rounded-lg border border-gray-300 bg-gray-100/80 text-gray-500 cursor-not-allowed outline-none transition text-sm">
             </div>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
                 <label class="block text-xs font-semibold text-gray-700 uppercase mb-1">Email Address *</label>
-                <input type="email" name="email" required placeholder="john@example.com"
-                  class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-primary outline-none transition text-sm">
+                <input type="email" name="email" required readonly placeholder="🔒 Auto-filled via Google Sign-In"
+                  class="w-full px-4 py-3 rounded-lg border border-gray-300 bg-gray-100/80 text-gray-500 cursor-not-allowed outline-none transition text-sm">
               </div>
               <div>
                 <label class="block text-xs font-semibold text-gray-700 uppercase mb-1">Phone Number *</label>
@@ -386,6 +420,9 @@
     </button>
   </div>
 
+  <!-- Google Authentication Scripts -->
+  <script src="../assets/js/google-auth-config.js"></script>
+  <script src="../assets/js/google-auth.js"></script>
   <script src="../assets/js/main.js"></script>
 </body>
 

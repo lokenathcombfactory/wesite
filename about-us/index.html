@@ -35,6 +35,26 @@
 
 <body class="bg-white text-gray-800 antialiased selection:bg-brand-primary selection:text-white">
 
+  <!-- 0. WEBSITE UNDER PROGRESS NOTIFICATION BAR -->
+  <div id="under-progress-banner" class="bg-gradient-to-r from-amber-500 via-amber-400 to-amber-500 text-slate-950 py-2 px-4 text-xs sm:text-sm font-medium relative z-[60] shadow-md border-b border-amber-600/30">
+    <div class="container mx-auto flex items-center justify-between gap-3">
+      <div class="flex items-center gap-2.5 mx-auto sm:mx-0 text-center sm:text-left flex-wrap sm:flex-nowrap justify-center">
+        <span class="inline-flex items-center justify-center bg-slate-900 text-amber-300 text-[11px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider shadow-sm shrink-0">
+          <span class="w-2 h-2 rounded-full bg-amber-400 inline-block mr-1.5 animate-pulse"></span>
+          Under Progress
+        </span>
+        <span class="text-slate-950 font-semibold">
+          Notice: This website is currently under progress. Features and content are being updated!
+        </span>
+      </div>
+      <button id="close-progress-banner" type="button" class="text-slate-900/80 hover:text-slate-950 hover:bg-amber-600/20 p-1 rounded-full transition-colors shrink-0 cursor-pointer" aria-label="Close notification">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+
   <!-- MARQUEE BAR -->
   <div class="bg-brand-primary text-white py-1.5 text-xs sm:text-sm overflow-hidden relative z-50">
     <div class="container mx-auto px-4 flex items-center justify-between">

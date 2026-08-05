@@ -3,6 +3,7 @@
  */
 
 document.addEventListener('DOMContentLoaded', () => {
+  initNoticeBanner();
   initMobileMenu();
   initHeroSlider();
   initWeOfferSlider();
@@ -14,6 +15,30 @@ document.addEventListener('DOMContentLoaded', () => {
   initWhatsAppWidget();
   initProductDetailPage();
 });
+
+/* 0. Notification Bar (Under Progress) */
+function initNoticeBanner() {
+  const banner = document.getElementById('under-progress-banner');
+  const closeBtn = document.getElementById('close-progress-banner');
+
+  if (!banner) return;
+
+  if (sessionStorage.getItem('progress_banner_dismissed') === 'true') {
+    banner.style.display = 'none';
+  }
+
+  if (closeBtn) {
+    closeBtn.addEventListener('click', () => {
+      banner.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+      banner.style.opacity = '0';
+      banner.style.transform = 'translateY(-100%)';
+      setTimeout(() => {
+        banner.style.display = 'none';
+        sessionStorage.setItem('progress_banner_dismissed', 'true');
+      }, 300);
+    });
+  }
+}
 
 /* 1. Mobile Menu Drawer */
 function initMobileMenu() {
@@ -825,119 +850,110 @@ function initProductDetailPage() {
 
   if (!detailTitle || !detailGrid) return;
 
-  // Shared catalog Database
+  // Shared catalog Database with exact user categories
   const catalogDb = {
-    "ladies": {
-      title: "9 Inch Ladies Comb Manufacturers",
-      desc: "<p><strong>Loke Nath Comb Factory</strong> is the Reliable <strong>9 Inch Ladies Comb Manufacturer</strong> in Bongaon, West Bengal, India. The 9-inch ladies' comb that we make is not just a functional product, it is also a necessity in your hair care toolbox this means that this comb will accentuate your grooming kit. It is easy to use and convenient for daily shaving and styling.</p><p>We are the Versatile <strong>9 Inch Ladies Comb Exporters in India</strong>. Our combs are engineered with high-grade polymer featuring smooth anti-static teeth that glide effortlessly through long or thick hair without causing breakage or scalp discomfort.</p>",
-      specs: "Material: Premium Grade Polymer & Acetate | Length: 22 CM | Features: Fine & Wide Teeth Combo | Anti-Static: Yes",
+    "jessore-fancy": {
+      title: "Jessore New Fancy Comb Manufacturers",
+      desc: "<p><strong>Loke Nath Comb Factory</strong> is the leading manufacturer of <strong>Jessore New Fancy Combs</strong> in Bongaon, West Bengal. Crafted with modern aesthetic designs, vibrant dual-tone shades, and ultra-smooth polished teeth for premium hair grooming.</p><p>Browse our complete live catalog on WhatsApp (<a href='https://wa.me/c/218601520894144' target='_blank' class='text-brand-primary font-bold underline'>View WhatsApp Catalog</a>).</p>",
+      specs: "Material: High-Gloss Polymer & Virgin Plastic | Style: New Fancy Designer Finish | Teeth: Anti-Static Fine & Medium Teeth",
       images: ["assets/uploads/Quick-ifo-cards/img3.png", "assets/uploads/Quick-ifo-cards/img1.png", "assets/uploads/Quick-ifo-cards/img4.png"],
       products: [
-        { name: "Spider", size: "22 CM", weight: "14.7 Grams", img: "assets/uploads/Quick-ifo-cards/img3.png" },
-        { name: "Airline", size: "22 CM", weight: "19.7 Grams", img: "assets/uploads/Quick-ifo-cards/img1.png" },
-        { name: "Surya", size: "21 CM", weight: "16.7 Grams", img: "assets/uploads/Quick-ifo-cards/img4.png" },
-        { name: "TOPLINE", size: "22 CM", weight: "19.5 Grams", img: "assets/uploads/Quick-ifo-cards/img3.png" },
-        { name: "TIK TIK", size: "21 CM", weight: "11.8 Grams", img: "assets/uploads/Quick-ifo-cards/img1.png" },
-        { name: "SURYA KIRAN", size: "20 CM", weight: "16.2 Grams", img: "assets/uploads/Quick-ifo-cards/img4.png" },
-        { name: "SULTAN", size: "21 CM", weight: "17 Grams", img: "assets/uploads/Quick-ifo-cards/img3.png" },
-        { name: "APPLE", size: "21 CM", weight: "19.4 Grams", img: "assets/uploads/Quick-ifo-cards/img1.png" },
-        { name: "ROCKET", size: "22 CM", weight: "24 Grams", img: "assets/uploads/Quick-ifo-cards/img4.png" },
-        { name: "MAGIC", size: "22 CM", weight: "21.7 Grams", img: "assets/uploads/Quick-ifo-cards/img3.png" },
-        { name: "GRU", size: "19 CM", weight: "21.7 Grams", img: "assets/uploads/Quick-ifo-cards/img1.png" },
-        { name: "CLASSIC", size: "22 CM", weight: "20.5 Grams", img: "assets/uploads/Quick-ifo-cards/img4.png" }
+        { name: "Fancy Designer Model A", size: "22 CM", weight: "18 Grams", img: "assets/uploads/Quick-ifo-cards/img3.png" },
+        { name: "Fancy Wave Grip", size: "21 CM", weight: "16.5 Grams", img: "assets/uploads/Quick-ifo-cards/img1.png" },
+        { name: "Fancy Color Burst", size: "20 CM", weight: "15 Grams", img: "assets/uploads/Quick-ifo-cards/img4.png" }
       ]
     },
-    "wooden": {
-      title: "Wooden Comb Manufacturers",
-      desc: "<p><strong>Loke Nath Comb Factory</strong> is the Premier <strong>Wooden Comb Manufacturer</strong> in Bongaon, West Bengal, India. Handcrafted from 100% natural Neem Wood to naturally condition hair and massage scalp follicles.</p>",
+    "jessore-comb": {
+      title: "Jessore Comb Manufacturers",
+      desc: "<p><strong>Loke Nath Comb Factory</strong> is the wholesale manufacturer of authentic <strong>Jessore Combs</strong> in Bongaon & West Bengal. Our classic Jessore collection features precision smooth teeth, high durability, and scalp massage tips.</p><p>Browse our complete live catalog on WhatsApp (<a href='https://wa.me/c/218601520894144' target='_blank' class='text-brand-primary font-bold underline'>View WhatsApp Catalog</a>).</p>",
+      specs: "Material: Premium High-Density Polymer & Neem | Style: Classic Jessore Design | Live Catalog: wa.me/c/218601520894144",
+      images: ["assets/uploads/Quick-ifo-cards/img3.png", "assets/uploads/Quick-ifo-cards/img1.png"],
+      products: [
+        { name: "Jessore Fine Comb", size: "20 CM", weight: "16 Grams", img: "assets/uploads/Quick-ifo-cards/img3.png" },
+        { name: "Jessore Master Handle", size: "22 CM", weight: "19 Grams", img: "assets/uploads/Quick-ifo-cards/img1.png" },
+        { name: "Jessore Dual Tooth", size: "21 CM", weight: "17.5 Grams", img: "assets/uploads/Quick-ifo-cards/img4.png" }
+      ]
+    },
+    "plastic-jessore-tooth": {
+      title: "Plastic Jessore Tooth Comb Manufacturers",
+      desc: "<p><strong>Loke Nath Comb Factory</strong> produces heavy-duty <strong>Plastic Jessore Tooth Combs</strong> with extra-wide and fine tooth spacing engineered for smooth hair detangling without pulling or breakage.</p>",
+      specs: "Teeth Structure: Wide & Fine Dual Gap | Material: Virgin High-Impact Plastic | Color Options: Black, Amber, Pastel",
+      images: ["assets/uploads/Quick-ifo-cards/img4.png", "assets/uploads/Quick-ifo-cards/img3.png"],
+      products: [
+        { name: "Wide Tooth Jessore", size: "21 CM", weight: "18.2 Grams", img: "assets/uploads/Quick-ifo-cards/img4.png" },
+        { name: "Dual Tooth Jessore Pro", size: "22 CM", weight: "20 Grams", img: "assets/uploads/Quick-ifo-cards/img3.png" }
+      ]
+    },
+    "plastic-box": {
+      title: "Plastic Box Comb Manufacturers",
+      desc: "<p><strong>Loke Nath Comb Factory</strong> supplies wholesale <strong>Plastic Box Combs</strong> in individual and bulk boxed sets packaged for retail stores, supermarkets, and hotel distribution.</p>",
+      specs: "Packaging: Individual Box / Display Master Carton | Material: Durable Virgin Polypropylene",
+      images: ["assets/uploads/Quick-ifo-cards/img1.png", "assets/uploads/Quick-ifo-cards/img2.png"],
+      products: [
+        { name: "Boxed Retail Pack Comb", size: "20 CM", weight: "19 Grams", img: "assets/uploads/Quick-ifo-cards/img1.png" },
+        { name: "Master Box 12-Pack", size: "Mixed 18-22 CM", weight: "240 Grams Box", img: "assets/uploads/Quick-ifo-cards/img2.png" }
+      ]
+    },
+    "plastic-pitta": {
+      title: "Plastic PITTA Comb Manufacturers",
+      desc: "<p><strong>Loke Nath Comb Factory</strong> is the leading manufacturer of high-precision <strong>Plastic PITTA Combs</strong> crafted with rigid backbones, fine teeth alignment, and daily scalp care ergonomics.</p>",
+      specs: "Style: PITTA Pattern Hair Comb | Material: Rigid Poly-Acetate | Anti-Static: Yes",
+      images: ["assets/uploads/Quick-ifo-cards/img3.png"],
+      products: [
+        { name: "Standard PITTA Comb", size: "20 CM", weight: "17 Grams", img: "assets/uploads/Quick-ifo-cards/img3.png" },
+        { name: "Heavy Duty PITTA Pro", size: "22 CM", weight: "21 Grams", img: "assets/uploads/Quick-ifo-cards/img1.png" }
+      ]
+    },
+    "neem-wooden": {
+      title: "Neem Wooden Comb Manufacturers",
+      desc: "<p><strong>Loke Nath Comb Factory</strong> is the Premier <strong>Neem Wooden Comb Manufacturer</strong> in Bongaon, West Bengal. Handcrafted from 100% natural Neem Wood to condition hair naturally and massage scalp follicles.</p>",
       specs: "Material: 100% Natural Neem Wood | Anti-Static: 100% | Teeth: Polished Smooth Rounded Tips",
       images: ["assets/uploads/Quick-ifo-cards/img2.png"],
       products: [
         { name: "Neem Handle Comb", size: "20 CM", weight: "28 Grams", img: "assets/uploads/Quick-ifo-cards/img2.png" },
         { name: "Neem Wide Tooth", size: "19 CM", weight: "25 Grams", img: "assets/uploads/Quick-ifo-cards/img2.png" },
-        { name: "Pocket Wooden", size: "14 CM", weight: "18 Grams", img: "assets/uploads/Quick-ifo-cards/img2.png" }
+        { name: "Pocket Wooden Neem", size: "14 CM", weight: "18 Grams", img: "assets/uploads/Quick-ifo-cards/img2.png" }
       ]
     },
-    "pocket": {
-      title: "Pocket Comb Manufacturers",
-      desc: "<p><strong>Loke Nath Comb Factory</strong> is the Leading <strong>Pocket Comb Manufacturer</strong> in West Bengal. Compact, lightweight, and durable grooming combs designed for daily carrying.</p>",
-      specs: "Size: 5 Inch Compact | Material: High Impact Polypropylene | Portability: Shirt/Pants Pocket Fit",
-      images: ["assets/uploads/Quick-ifo-cards/img1.png", "assets/uploads/Quick-ifo-cards/img3.png"],
+    "plastic-razor": {
+      title: "Plastic Razor & Barber Accessories",
+      desc: "<p><strong>Loke Nath Comb Factory</strong> manufactures ergonomic <strong>Plastic Barber Razors</strong> and grooming accessories designed for barber shops, personal grooming, and salons.</p>",
+      specs: "Material: High-Density ABS & Stainless Steel Holder | Ergonomics: Non-Slip Folding Handle",
+      images: ["assets/uploads/Quick-ifo-cards/img4.png"],
       products: [
-        { name: "Mini Pocket", size: "13 CM", weight: "8.5 Grams", img: "assets/uploads/Quick-ifo-cards/img1.png" },
-        { name: "Slim Pocket", size: "14 CM", weight: "9.2 Grams", img: "assets/uploads/Quick-ifo-cards/img3.png" },
-        { name: "Dual Fine Pocket", size: "13.5 CM", weight: "8.9 Grams", img: "assets/uploads/Quick-ifo-cards/img4.png" }
+        { name: "Barber Folding Plastic Razor", size: "15 CM", weight: "22 Grams", img: "assets/uploads/Quick-ifo-cards/img4.png" },
+        { name: "Salon Shaving Razor Grip", size: "16 CM", weight: "24 Grams", img: "assets/uploads/Quick-ifo-cards/img4.png" }
       ]
     },
-    "family": {
-      title: "Hair Comb Family Pack Manufacturers",
-      desc: "<p><strong>Loke Nath Comb Factory</strong> produces versatile multi-pack family combs featuring diverse sizes for men, women, and kids in bright vibrant colors.</p>",
-      specs: "Pack Size: 4-6 Combs Per Pack | Packaging: Display Card / Box | Material: Virgin Plastic",
+    "shikha-kangha": {
+      title: "Shikha Kangha Set Manufacturers",
+      desc: "<p><strong>Loke Nath Comb Factory</strong> produces authentic traditional <strong>Shikha Kangha Sets</strong> crafted according to traditional cultural guidelines for daily wear and hair hygiene.</p>",
+      specs: "Set Type: Traditional Kangha Comb | Material: High Grade Polymer / Eco Neem Wood | Polish: Smooth Non-Scratch Edges",
+      images: ["assets/uploads/Quick-ifo-cards/img1.png", "assets/uploads/Quick-ifo-cards/img2.png"],
+      products: [
+        { name: "Traditional Shikha Kangha", size: "7 CM", weight: "8 Grams", img: "assets/uploads/Quick-ifo-cards/img1.png" },
+        { name: "Compact Kangha Wooden Set", size: "8 CM", weight: "10 Grams", img: "assets/uploads/Quick-ifo-cards/img2.png" }
+      ]
+    },
+    "roll-comb": {
+      title: "Roll Comb & Round Styling Brushes",
+      desc: "<p><strong>Loke Nath Comb Factory</strong> manufactures premium <strong>Roll Combs</strong> (round blow-drying styling brushes) for salons, barbers, and daily hair volume styling.</p>",
+      specs: "Type: Round Barrel Roll Comb | Bristles: Heat-Resistant Nylon Ball-Tip | Usage: Blow Drying & Volume Styling",
+      images: ["assets/uploads/catalog_center_showcase.png"],
+      products: [
+        { name: "Professional Barrel Roll Comb", size: "23 CM", weight: "55 Grams", img: "assets/uploads/catalog_center_showcase.png" },
+        { name: "Salon Blow-Dry Roll Comb", size: "24 CM", weight: "62 Grams", img: "assets/uploads/catalog_center_showcase.png" }
+      ]
+    },
+    "ladies": {
+      title: "9 Inch Ladies Comb Manufacturers",
+      desc: "<p><strong>Loke Nath Comb Factory</strong> is the Reliable <strong>9 Inch Ladies Comb Manufacturer</strong> in Bongaon, West Bengal, India. Our 9-inch ladies' comb features smooth anti-static teeth that glide effortlessly through long or thick hair without causing breakage or scalp discomfort.</p>",
+      specs: "Material: Premium Grade Polymer & Acetate | Length: 22 CM | Features: Fine & Wide Teeth Combo | Anti-Static: Yes",
       images: ["assets/uploads/Quick-ifo-cards/img3.png", "assets/uploads/Quick-ifo-cards/img1.png"],
       products: [
-        { name: "Family Set 5-Pcs", size: "Mixed 14-22 CM", weight: "85 Grams Pack", img: "assets/uploads/Quick-ifo-cards/img3.png" },
-        { name: "Color Burst Pack", size: "Mixed 15-20 CM", weight: "78 Grams Pack", img: "assets/uploads/Quick-ifo-cards/img1.png" }
-      ]
-    },
-    "lice": {
-      title: "Hygienic Lice Comb Manufacturers",
-      desc: "<p><strong>Loke Nath Comb Factory</strong> is the Trusted <strong>Lice Comb Manufacturer</strong> in India, featuring ultra-fine micro teeth designed for scalp hygiene and nit removal.</p>",
-      specs: "Teeth Gap: Ultra Fine Micro-Gap | Material: Rigid Acetate | Safety: Rounded Non-Scratch Tips",
-      images: ["assets/uploads/Quick-ifo-cards/img4.png"],
-      products: [
-        { name: "Solon Fine Lice", size: "10 CM", weight: "12 Grams", img: "assets/uploads/Quick-ifo-cards/img4.png" },
-        { name: "Double Side Lice", size: "9 CM", weight: "11 Grams", img: "assets/uploads/Quick-ifo-cards/img4.png" }
-      ]
-    },
-    "pro-brushes": {
-      title: "Professional Hair Brushes Manufacturers",
-      desc: "<p><strong>Loke Nath Comb Factory</strong> supplies high quality styling paddle brushes and thermal round brushes engineered for salon professional blow-drying and detangling.</p>",
-      specs: "Bristles: Soft Ball-Tip Nylon | Grip: Ergonomic Non-Slip Rubberized Handle",
-      images: ["assets/uploads/catalog_center_showcase.png"],
-      products: [
-        { name: "Vent Styling Brush", size: "24 CM", weight: "65 Grams", img: "assets/uploads/catalog_center_showcase.png" },
-        { name: "Round Thermal Brush", size: "23 CM", weight: "58 Grams", img: "assets/uploads/catalog_center_showcase.png" },
-        { name: "Paddle Cushion Brush", size: "25 CM", weight: "72 Grams", img: "assets/uploads/catalog_center_showcase.png" }
-      ]
-    },
-    "brushes": {
-      title: "Hair Brushes Manufacturers",
-      desc: "<p><strong>Loke Nath Comb Factory</strong> manufactures lightweight everyday grooming hair brushes crafted with ball-tipped bristles for gentle scalp massaging.</p>",
-      specs: "Usage: Everyday Hair Detangling | Material: Durable ABS & Soft Nylon",
-      images: ["assets/uploads/catalog_center_showcase.png"],
-      products: [
-        { name: "Daily Detangler", size: "21 CM", weight: "45 Grams", img: "assets/uploads/catalog_center_showcase.png" },
-        { name: "Travel Hair Brush", size: "16 CM", weight: "32 Grams", img: "assets/uploads/catalog_center_showcase.png" }
-      ]
-    },
-    "hotel": {
-      title: "Hotel Amenity Comb Manufacturers",
-      desc: "<p><strong>Loke Nath Comb Factory</strong> is the Premier <strong>Hotel Amenity Comb Supplier</strong>, manufacturing individually poly-wrapped combs for luxury hotels and resort guest kits.</p>",
-      specs: "Wrap: Sealed Polybag Packaging | Material: Eco Virgin Polymer | Colors: White / Ivory / Black",
-      images: ["assets/uploads/Quick-ifo-cards/img1.png"],
-      products: [
-        { name: "Hotel Amenity Comb", size: "18 CM", weight: "14 Grams", img: "assets/uploads/Quick-ifo-cards/img1.png" },
-        { name: "Compact Resort Comb", size: "15 CM", weight: "10 Grams", img: "assets/uploads/Quick-ifo-cards/img1.png" }
-      ]
-    },
-    "salon": {
-      title: "Barber & Salon Comb Manufacturers",
-      desc: "<p><strong>Loke Nath Comb Factory</strong> manufactures heat-resistant sectioning tail combs and barber fading combs designed for professional hair salons.</p>",
-      specs: "Heat Resistance: Up to 180°C | Chemical Resistant: Yes | Usage: Barber Styling & Haircutting",
-      images: ["assets/uploads/Quick-ifo-cards/img4.png"],
-      products: [
-        { name: "Tail Sectioning Comb", size: "21 CM", weight: "13 Grams", img: "assets/uploads/Quick-ifo-cards/img4.png" },
-        { name: "Barber Clipper Comb", size: "22 CM", weight: "18 Grams", img: "assets/uploads/Quick-ifo-cards/img4.png" }
-      ]
-    },
-    "hair-comb": {
-      title: "Hair Comb Manufacturers",
-      desc: "<p><strong>Loke Nath Comb Factory</strong> produces a wide variety of robust everyday hair combs crafted with rounded teeth for scalp comfort.</p>",
-      specs: "Material: High Quality Plastic | Teeth: Smooth Rounded | Colors: Multi-color options",
-      images: ["assets/uploads/Quick-ifo-cards/img3.png"],
-      products: [
-        { name: "Standard Family Comb", size: "20 CM", weight: "16 Grams", img: "assets/uploads/Quick-ifo-cards/img3.png" },
-        { name: "Wide Tooth Styling Comb", size: "19 CM", weight: "15 Grams", img: "assets/uploads/Quick-ifo-cards/img3.png" }
+        { name: "Spider", size: "22 CM", weight: "14.7 Grams", img: "assets/uploads/Quick-ifo-cards/img3.png" },
+        { name: "Airline", size: "22 CM", weight: "19.7 Grams", img: "assets/uploads/Quick-ifo-cards/img1.png" },
+        { name: "Surya", size: "21 CM", weight: "16.7 Grams", img: "assets/uploads/Quick-ifo-cards/img4.png" }
       ]
     }
   };

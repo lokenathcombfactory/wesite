@@ -35,6 +35,26 @@
 
 <body class="bg-white text-gray-800 antialiased selection:bg-brand-primary selection:text-white">
 
+  <!-- 0. WEBSITE UNDER PROGRESS NOTIFICATION BAR -->
+  <div id="under-progress-banner" class="bg-gradient-to-r from-amber-500 via-amber-400 to-amber-500 text-slate-950 py-2 px-4 text-xs sm:text-sm font-medium relative z-[60] shadow-md border-b border-amber-600/30">
+    <div class="container mx-auto flex items-center justify-between gap-3">
+      <div class="flex items-center gap-2.5 mx-auto sm:mx-0 text-center sm:text-left flex-wrap sm:flex-nowrap justify-center">
+        <span class="inline-flex items-center justify-center bg-slate-900 text-amber-300 text-[11px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider shadow-sm shrink-0">
+          <span class="w-2 h-2 rounded-full bg-amber-400 inline-block mr-1.5 animate-pulse"></span>
+          Under Progress
+        </span>
+        <span class="text-slate-950 font-semibold">
+          Notice: This website is currently under progress. Features and content are being updated!
+        </span>
+      </div>
+      <button id="close-progress-banner" type="button" class="text-slate-900/80 hover:text-slate-950 hover:bg-amber-600/20 p-1 rounded-full transition-colors shrink-0 cursor-pointer" aria-label="Close notification">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+
   <!-- MARQUEE BAR -->
   <div class="bg-brand-primary text-white py-1.5 text-xs sm:text-sm overflow-hidden relative z-50">
     <div class="container mx-auto px-4 flex items-center justify-between">
@@ -148,28 +168,31 @@
             data-filter="all">All Products</button>
           <button
             class="product-filter-btn shrink-0 touch-target px-5 py-2.5 rounded-full text-sm font-semibold whitespace-nowrap bg-white text-gray-700 hover:bg-pink-50 hover:text-brand-primary transition border border-gray-200 shadow-sm snap-start"
-            data-filter="wooden">Wooden Comb</button>
+            data-filter="jessore-fancy">Jessore New Fancy Comb</button>
           <button
             class="product-filter-btn shrink-0 touch-target px-5 py-2.5 rounded-full text-sm font-semibold whitespace-nowrap bg-white text-gray-700 hover:bg-pink-50 hover:text-brand-primary transition border border-gray-200 shadow-sm snap-start"
-            data-filter="pocket">Pocket Comb</button>
+            data-filter="jessore-comb">Jessore Comb</button>
           <button
             class="product-filter-btn shrink-0 touch-target px-5 py-2.5 rounded-full text-sm font-semibold whitespace-nowrap bg-white text-gray-700 hover:bg-pink-50 hover:text-brand-primary transition border border-gray-200 shadow-sm snap-start"
-            data-filter="ladies">9 Inch Ladies Comb</button>
+            data-filter="plastic-jessore-tooth">Plastic Jessore Tooth Comb</button>
           <button
             class="product-filter-btn shrink-0 touch-target px-5 py-2.5 rounded-full text-sm font-semibold whitespace-nowrap bg-white text-gray-700 hover:bg-pink-50 hover:text-brand-primary transition border border-gray-200 shadow-sm snap-start"
-            data-filter="family">Family Pack</button>
+            data-filter="plastic-box">Plastic Box Comb</button>
           <button
             class="product-filter-btn shrink-0 touch-target px-5 py-2.5 rounded-full text-sm font-semibold whitespace-nowrap bg-white text-gray-700 hover:bg-pink-50 hover:text-brand-primary transition border border-gray-200 shadow-sm snap-start"
-            data-filter="lice">Lice Comb</button>
+            data-filter="plastic-pitta">Plastic PITTA Comb</button>
           <button
             class="product-filter-btn shrink-0 touch-target px-5 py-2.5 rounded-full text-sm font-semibold whitespace-nowrap bg-white text-gray-700 hover:bg-pink-50 hover:text-brand-primary transition border border-gray-200 shadow-sm snap-start"
-            data-filter="brushes">Hair Brushes</button>
+            data-filter="neem-wooden">Neem Wooden Comb</button>
           <button
             class="product-filter-btn shrink-0 touch-target px-5 py-2.5 rounded-full text-sm font-semibold whitespace-nowrap bg-white text-gray-700 hover:bg-pink-50 hover:text-brand-primary transition border border-gray-200 shadow-sm snap-start"
-            data-filter="hotel">Hotel Comb</button>
+            data-filter="plastic-razor">Plastic Razor</button>
           <button
             class="product-filter-btn shrink-0 touch-target px-5 py-2.5 rounded-full text-sm font-semibold whitespace-nowrap bg-white text-gray-700 hover:bg-pink-50 hover:text-brand-primary transition border border-gray-200 shadow-sm snap-start"
-            data-filter="salon">Salon Comb</button>
+            data-filter="shikha-kangha">Shikha Kangha Set</button>
+          <button
+            class="product-filter-btn shrink-0 touch-target px-5 py-2.5 rounded-full text-sm font-semibold whitespace-nowrap bg-white text-gray-700 hover:bg-pink-50 hover:text-brand-primary transition border border-gray-200 shadow-sm snap-start"
+            data-filter="roll-comb">Roll Comb</button>
         </div>
 
         <!-- Right Gradient Indicator -->
@@ -188,7 +211,206 @@
 
       <!-- Products Grid -->
       <div id="products-catalog-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        <!-- Grid Items -->
+        <!-- 1. Jessore New Fancy Comb -->
+        <div
+          class="product-item-card bg-white p-5 rounded-2xl border border-gray-200/80 shadow-md hover:shadow-xl transition group flex flex-col justify-between"
+          data-category="jessore-fancy">
+          <div>
+            <div class="h-48 bg-gray-50 rounded-xl flex items-center justify-center p-3 mb-4 overflow-hidden relative">
+              <img src="../assets/uploads/Quick-ifo-cards/img3.png" alt="Jessore New Fancy Comb"
+                class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300">
+              <span
+                class="absolute top-2 right-2 bg-brand-primary text-white text-[10px] font-bold px-2 py-0.5 rounded">New
+                Fancy</span>
+            </div>
+            <span class="text-[11px] font-bold uppercase tracking-wider text-brand-primary block mb-1">Designer
+              Line</span>
+            <h3 class="font-bold text-gray-900 text-lg group-hover:text-brand-primary transition mb-2">Jessore New Fancy
+              Comb</h3>
+            <p class="text-xs text-gray-600 leading-relaxed mb-4">Vibrant designer finishes with high-gloss polish and
+              anti-static teeth alignment.</p>
+          </div>
+          <a href="../product-details/?cat=jessore-fancy"
+            class="touch-target block text-center bg-brand-primary hover:bg-brand-secondary text-white font-semibold text-xs py-3 rounded-xl transition shadow">Explore
+            Models & Specs</a>
+        </div>
+
+        <!-- 2. Jessore Comb -->
+        <div
+          class="product-item-card bg-white p-5 rounded-2xl border border-gray-200/80 shadow-md hover:shadow-xl transition group flex flex-col justify-between"
+          data-category="jessore-comb">
+          <div>
+            <div class="h-48 bg-gray-50 rounded-xl flex items-center justify-center p-3 mb-4 overflow-hidden relative">
+              <img src="../assets/uploads/Quick-ifo-cards/img1.png" alt="Jessore Comb"
+                class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300">
+              <span
+                class="absolute top-2 right-2 bg-emerald-600 text-white text-[10px] font-bold px-2 py-0.5 rounded"></span>
+            </div>
+            <span class="text-[11px] font-bold uppercase tracking-wider text-brand-primary block mb-1">Traditional
+              Line</span>
+            <h3 class="font-bold text-gray-900 text-lg group-hover:text-brand-primary transition mb-2">Jessore Comb
+              Series</h3>
+            <p class="text-xs text-gray-600 leading-relaxed mb-4">Traditional handcrafted Jessore hair combs with smooth
+              polished anti-static teeth.</p>
+          </div>
+          <div class="space-y-2">
+            <a href="https://wa.me/c/218601520894144" target="_blank"
+              class="touch-target flex items-center justify-center gap-1.5 bg-[#25d366] hover:bg-[#128c7e] text-white font-semibold text-xs py-2.5 rounded-xl transition shadow">
+              <span>📱 View WhatsApp Catalog</span>
+            </a>
+            <a href="../product-details/?cat=jessore-comb"
+              class="touch-target block text-center bg-brand-primary hover:bg-brand-secondary text-white font-semibold text-xs py-2.5 rounded-xl transition shadow">Explore
+              Models & Specs</a>
+          </div>
+        </div>
+
+        <!-- 3. Plastic Jessore Tooth Comb -->
+        <div
+          class="product-item-card bg-white p-5 rounded-2xl border border-gray-200/80 shadow-md hover:shadow-xl transition group flex flex-col justify-between"
+          data-category="plastic-jessore-tooth">
+          <div>
+            <div class="h-48 bg-gray-50 rounded-xl flex items-center justify-center p-3 mb-4 overflow-hidden">
+              <img src="../assets/uploads/Quick-ifo-cards/img4.png" alt="Plastic Jessore Tooth Comb"
+                class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300">
+            </div>
+            <span class="text-[11px] font-bold uppercase tracking-wider text-brand-primary block mb-1">Wide & Fine
+              Tooth</span>
+            <h3 class="font-bold text-gray-900 text-lg group-hover:text-brand-primary transition mb-2">Plastic Jessore
+              Tooth Comb</h3>
+            <p class="text-xs text-gray-600 leading-relaxed mb-4">Heavy duty plastic tooth spacing engineered for smooth
+              hair detangling.</p>
+          </div>
+          <a href="../product-details/?cat=plastic-jessore-tooth"
+            class="touch-target block text-center bg-brand-primary hover:bg-brand-secondary text-white font-semibold text-xs py-3 rounded-xl transition shadow">Explore
+            Models & Specs</a>
+        </div>
+
+        <!-- 4. Plastic Box Comb -->
+        <div
+          class="product-item-card bg-white p-5 rounded-2xl border border-gray-200/80 shadow-md hover:shadow-xl transition group flex flex-col justify-between"
+          data-category="plastic-box">
+          <div>
+            <div class="h-48 bg-gray-50 rounded-xl flex items-center justify-center p-3 mb-4 overflow-hidden">
+              <img src="../assets/uploads/Quick-ifo-cards/img1.png" alt="Plastic Box Comb"
+                class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300">
+            </div>
+            <span class="text-[11px] font-bold uppercase tracking-wider text-brand-primary block mb-1">Retail Box
+              Pack</span>
+            <h3 class="font-bold text-gray-900 text-lg group-hover:text-brand-primary transition mb-2">Plastic Box Comb
+            </h3>
+            <p class="text-xs text-gray-600 leading-relaxed mb-4">Individual retail boxed sets packaged for supermarkets
+              and wholesale stores.</p>
+          </div>
+          <a href="../product-details/?cat=plastic-box"
+            class="touch-target block text-center bg-brand-primary hover:bg-brand-secondary text-white font-semibold text-xs py-3 rounded-xl transition shadow">Explore
+            Models & Specs</a>
+        </div>
+
+        <!-- 5. Plastic PITTA Comb -->
+        <div
+          class="product-item-card bg-white p-5 rounded-2xl border border-gray-200/80 shadow-md hover:shadow-xl transition group flex flex-col justify-between"
+          data-category="plastic-pitta">
+          <div>
+            <div class="h-48 bg-gray-50 rounded-xl flex items-center justify-center p-3 mb-4 overflow-hidden">
+              <img src="../assets/uploads/Quick-ifo-cards/img3.png" alt="Plastic PITTA Comb"
+                class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300">
+            </div>
+            <span class="text-[11px] font-bold uppercase tracking-wider text-brand-primary block mb-1">PITTA
+              Series</span>
+            <h3 class="font-bold text-gray-900 text-lg group-hover:text-brand-primary transition mb-2">Plastic PITTA
+              Comb</h3>
+            <p class="text-xs text-gray-600 leading-relaxed mb-4">Rigid backbone structure with fine teeth alignment for
+              daily grooming comfort.</p>
+          </div>
+          <a href="../product-details/?cat=plastic-pitta"
+            class="touch-target block text-center bg-brand-primary hover:bg-brand-secondary text-white font-semibold text-xs py-3 rounded-xl transition shadow">Explore
+            Models & Specs</a>
+        </div>
+
+        <!-- 6. Neem Wooden Comb -->
+        <div
+          class="product-item-card bg-white p-5 rounded-2xl border border-gray-200/80 shadow-md hover:shadow-xl transition group flex flex-col justify-between"
+          data-category="neem-wooden">
+          <div>
+            <div class="h-48 bg-gray-50 rounded-xl flex items-center justify-center p-3 mb-4 overflow-hidden">
+              <img src="../assets/uploads/Quick-ifo-cards/img2.png" alt="Neem Wooden Comb"
+                class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300">
+            </div>
+            <span class="text-[11px] font-bold uppercase tracking-wider text-brand-primary block mb-1">Natural
+              Care</span>
+            <h3 class="font-bold text-gray-900 text-lg group-hover:text-brand-primary transition mb-2">Neem Wooden Comb
+            </h3>
+            <p class="text-xs text-gray-600 leading-relaxed mb-4">100% natural Neem wood combs for scalp massage and
+              anti-static hair care.</p>
+          </div>
+          <a href="../product-details/?cat=neem-wooden"
+            class="touch-target block text-center bg-brand-primary hover:bg-brand-secondary text-white font-semibold text-xs py-3 rounded-xl transition shadow">Explore
+            Models & Specs</a>
+        </div>
+
+        <!-- 7. Plastic Razor -->
+        <div
+          class="product-item-card bg-white p-5 rounded-2xl border border-gray-200/80 shadow-md hover:shadow-xl transition group flex flex-col justify-between"
+          data-category="plastic-razor">
+          <div>
+            <div class="h-48 bg-gray-50 rounded-xl flex items-center justify-center p-3 mb-4 overflow-hidden">
+              <img src="../assets/uploads/Quick-ifo-cards/img4.png" alt="Plastic Razor"
+                class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300">
+            </div>
+            <span class="text-[11px] font-bold uppercase tracking-wider text-brand-primary block mb-1">Barber
+              Tools</span>
+            <h3 class="font-bold text-gray-900 text-lg group-hover:text-brand-primary transition mb-2">Plastic Razor
+            </h3>
+            <p class="text-xs text-gray-600 leading-relaxed mb-4">Ergonomic folding barber razors for professional
+              salons and personal grooming.</p>
+          </div>
+          <a href="../product-details/?cat=plastic-razor"
+            class="touch-target block text-center bg-brand-primary hover:bg-brand-secondary text-white font-semibold text-xs py-3 rounded-xl transition shadow">Explore
+            Models & Specs</a>
+        </div>
+
+        <!-- 8. Shikha Kangha Set -->
+        <div
+          class="product-item-card bg-white p-5 rounded-2xl border border-gray-200/80 shadow-md hover:shadow-xl transition group flex flex-col justify-between"
+          data-category="shikha-kangha">
+          <div>
+            <div class="h-48 bg-gray-50 rounded-xl flex items-center justify-center p-3 mb-4 overflow-hidden">
+              <img src="../assets/uploads/Quick-ifo-cards/img1.png" alt="Shikha Kangha Set"
+                class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300">
+            </div>
+            <span class="text-[11px] font-bold uppercase tracking-wider text-brand-primary block mb-1">Traditional
+              Set</span>
+            <h3 class="font-bold text-gray-900 text-lg group-hover:text-brand-primary transition mb-2">Shikha Kangha Set
+            </h3>
+            <p class="text-xs text-gray-600 leading-relaxed mb-4">Authentic cultural Shikha Kangha sets crafted with
+              smooth non-scratch edges.</p>
+          </div>
+          <a href="../product-details/?cat=shikha-kangha"
+            class="touch-target block text-center bg-brand-primary hover:bg-brand-secondary text-white font-semibold text-xs py-3 rounded-xl transition shadow">Explore
+            Models & Specs</a>
+        </div>
+
+        <!-- 9. Roll Comb -->
+        <div
+          class="product-item-card bg-white p-5 rounded-2xl border border-gray-200/80 shadow-md hover:shadow-xl transition group flex flex-col justify-between"
+          data-category="roll-comb">
+          <div>
+            <div class="h-48 bg-gray-50 rounded-xl flex items-center justify-center p-3 mb-4 overflow-hidden">
+              <img src="../assets/uploads/catalog_center_showcase.png" alt="Roll Comb"
+                class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300">
+            </div>
+            <span class="text-[11px] font-bold uppercase tracking-wider text-brand-primary block mb-1">Salon
+              Volume</span>
+            <h3 class="font-bold text-gray-900 text-lg group-hover:text-brand-primary transition mb-2">Roll Comb</h3>
+            <p class="text-xs text-gray-600 leading-relaxed mb-4">Round barrel styling roll combs with heat-resistant
+              bristles for blow-drying volume.</p>
+          </div>
+          <a href="../product-details/?cat=roll-comb"
+            class="touch-target block text-center bg-brand-primary hover:bg-brand-secondary text-white font-semibold text-xs py-3 rounded-xl transition shadow">Explore
+            Models & Specs</a>
+        </div>
+
+        <!-- 10. 9 Inch Ladies Comb -->
         <div
           class="product-item-card bg-white p-5 rounded-2xl border border-gray-200/80 shadow-md hover:shadow-xl transition group flex flex-col justify-between"
           data-category="ladies">
@@ -201,73 +423,15 @@
               Series</span>
             <h3 class="font-bold text-gray-900 text-lg group-hover:text-brand-primary transition mb-2">9 Inch Ladies
               Comb</h3>
-            <p class="text-xs text-gray-600 leading-relaxed mb-4">Loke Nath Comb Factory is the Reliable 9 Inch Ladies
-              Comb Manufacturer in Bongaon, West Bengal.</p>
+            <p class="text-xs text-gray-600 leading-relaxed mb-4">Reliable 9 inch ladies' comb featuring smooth
+              anti-static teeth for daily grooming.</p>
           </div>
           <a href="../product-details/?cat=ladies"
             class="touch-target block text-center bg-brand-primary hover:bg-brand-secondary text-white font-semibold text-xs py-3 rounded-xl transition shadow">Explore
             Models & Specs</a>
         </div>
-
-        <div
-          class="product-item-card bg-white p-5 rounded-2xl border border-gray-200/80 shadow-md hover:shadow-xl transition group flex flex-col justify-between"
-          data-category="wooden">
-          <div>
-            <div class="h-48 bg-gray-50 rounded-xl flex items-center justify-center p-3 mb-4 overflow-hidden">
-              <img src="../assets/uploads/Quick-ifo-cards/img2.png" alt="Wooden Comb"
-                class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300">
-            </div>
-            <span class="text-[11px] font-bold uppercase tracking-wider text-brand-primary block mb-1">Neem Wood</span>
-            <h3 class="font-bold text-gray-900 text-lg group-hover:text-brand-primary transition mb-2">Wooden Comb
-              Collection</h3>
-            <p class="text-xs text-gray-600 leading-relaxed mb-4">Handcrafted 100% natural Neem wood combs for scalp
-              massage and anti-static hair care.</p>
-          </div>
-          <a href="../product-details/?cat=wooden"
-            class="touch-target block text-center bg-brand-primary hover:bg-brand-secondary text-white font-semibold text-xs py-3 rounded-xl transition shadow">Explore
-            Models & Specs</a>
-        </div>
-
-        <div
-          class="product-item-card bg-white p-5 rounded-2xl border border-gray-200/80 shadow-md hover:shadow-xl transition group flex flex-col justify-between"
-          data-category="pocket">
-          <div>
-            <div class="h-48 bg-gray-50 rounded-xl flex items-center justify-center p-3 mb-4 overflow-hidden">
-              <img src="../assets/uploads/Quick-ifo-cards/img1.png" alt="Pocket Comb"
-                class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300">
-            </div>
-            <span class="text-[11px] font-bold uppercase tracking-wider text-brand-primary block mb-1">Compact
-              Travel</span>
-            <h3 class="font-bold text-gray-900 text-lg group-hover:text-brand-primary transition mb-2">Pocket Comb
-              Series</h3>
-            <p class="text-xs text-gray-600 leading-relaxed mb-4">Compact 5-inch pocket combs manufactured with durable
-              high-impact polymer.</p>
-          </div>
-          <a href="../product-details/?cat=pocket"
-            class="touch-target block text-center bg-brand-primary hover:bg-brand-secondary text-white font-semibold text-xs py-3 rounded-xl transition shadow">Explore
-            Models & Specs</a>
-        </div>
-
-        <div
-          class="product-item-card bg-white p-5 rounded-2xl border border-gray-200/80 shadow-md hover:shadow-xl transition group flex flex-col justify-between"
-          data-category="hotel">
-          <div>
-            <div class="h-48 bg-gray-50 rounded-xl flex items-center justify-center p-3 mb-4 overflow-hidden">
-              <img src="../assets/uploads/Quick-ifo-cards/img1.png" alt="Hotel Comb"
-                class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300">
-            </div>
-            <span class="text-[11px] font-bold uppercase tracking-wider text-brand-primary block mb-1">Hospitality
-              Kit</span>
-            <h3 class="font-bold text-gray-900 text-lg group-hover:text-brand-primary transition mb-2">Hotel Amenity
-              Combs</h3>
-            <p class="text-xs text-gray-600 leading-relaxed mb-4">Individually poly-wrapped hotel amenity combs for
-              resorts, luxury hotels, and travel guest kits.</p>
-          </div>
-          <a href="../product-details/?cat=hotel"
-            class="touch-target block text-center bg-brand-primary hover:bg-brand-secondary text-white font-semibold text-xs py-3 rounded-xl transition shadow">Explore
-            Models & Specs</a>
-        </div>
       </div>
+    </div>
     </div>
   </section>
 
