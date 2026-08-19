@@ -699,6 +699,17 @@ function initProductModals() {
         { name: "Standard Family Comb", size: "20 CM", weight: "16 Grams", img: "assets/uploads/Quick-ifo-cards/img3.png" },
         { name: "Wide Tooth Styling Comb", size: "19 CM", weight: "15 Grams", img: "assets/uploads/Quick-ifo-cards/img3.png" }
       ]
+    },
+    "jessore-fancy": {
+      title: "Jessore New Fancy Comb Manufacturers",
+      desc: "<p><strong>Loke Nath Comb Factory</strong> is the leading manufacturer of <strong>Jessore New Fancy Combs</strong> in Bongaon, West Bengal. Crafted with modern aesthetic designs, vibrant dual-tone shades, and ultra-smooth polished teeth for premium hair grooming.</p><p>Browse our complete live catalog on WhatsApp (<a href='https://wa.me/c/218601520894144' target='_blank' class='text-brand-primary font-bold underline'>View WhatsApp Catalog</a>).</p>",
+      specs: "Material: High-Gloss Polymer & Virgin Plastic | Style: New Fancy Designer Finish | Teeth: Anti-Static Fine & Medium Teeth",
+      images: ["assets/uploads/banner/img1.png", "assets/uploads/banner/img2.png", "assets/uploads/banner/img3.png"],
+      products: [
+        { name: "1 NO FANCY.", quantity: "120 Dz", price: "₹120.00", img: "assets/uploads/banner/img1.png" },
+        { name: "2 NO FANCY", quantity: "136 Dz.", price: "₹136.00", img: "assets/uploads/banner/img2.png" },
+        { name: "3 NO FANCY", quantity: "121 Dz.", price: "₹121.00", img: "assets/uploads/banner/img3.png" }
+      ]
     }
   };
 
@@ -751,8 +762,10 @@ function initProductModals() {
           <div>
             <h4 class="font-bold text-gray-900 text-xs sm:text-sm group-hover:text-brand-primary transition">${p.name}</h4>
             <div class="text-[11px] text-gray-500 mt-1 font-medium space-y-0.5">
-              <p>Size: <span class="text-gray-800 font-semibold">${p.size}</span></p>
-              <p>Weight: <span class="text-gray-800 font-semibold">${p.weight}</span></p>
+              ${p.quantity ? `<p>Qty: <span class="text-gray-800 font-semibold">${p.quantity}</span></p>` : ''}
+              ${p.price ? `<p>Price: <span class="text-brand-primary font-bold text-sm">${p.price}</span></p>` : ''}
+              ${p.size && !p.quantity ? `<p>Size: <span class="text-gray-800 font-semibold">${p.size}</span></p>` : ''}
+              ${p.weight && !p.price ? `<p>Weight: <span class="text-gray-800 font-semibold">${p.weight}</span></p>` : ''}
             </div>
           </div>
         </div>
@@ -767,7 +780,8 @@ function initProductModals() {
       const catName = (btn.getAttribute('data-category-name') || '').toLowerCase();
       let matchedKey = "ladies";
 
-      if (catName.includes("wood")) matchedKey = "wooden";
+      if (catName.includes("jessore") && catName.includes("fancy")) matchedKey = "jessore-fancy";
+      else if (catName.includes("wood")) matchedKey = "wooden";
       else if (catName.includes("pocket")) matchedKey = "pocket";
       else if (catName.includes("family")) matchedKey = "family";
       else if (catName.includes("lice")) matchedKey = "lice";
@@ -775,6 +789,7 @@ function initProductModals() {
       else if (catName.includes("salon")) matchedKey = "salon";
       else if (catName.includes("brush")) matchedKey = "brushes";
       else if (catName.includes("ladies") || catName.includes("9 inch")) matchedKey = "ladies";
+      else if (catName.includes("jessore")) matchedKey = "hair-comb";
       else matchedKey = "hair-comb";
 
       renderCategory(matchedKey);
@@ -856,11 +871,11 @@ function initProductDetailPage() {
       title: "Jessore New Fancy Comb Manufacturers",
       desc: "<p><strong>Loke Nath Comb Factory</strong> is the leading manufacturer of <strong>Jessore New Fancy Combs</strong> in Bongaon, West Bengal. Crafted with modern aesthetic designs, vibrant dual-tone shades, and ultra-smooth polished teeth for premium hair grooming.</p><p>Browse our complete live catalog on WhatsApp (<a href='https://wa.me/c/218601520894144' target='_blank' class='text-brand-primary font-bold underline'>View WhatsApp Catalog</a>).</p>",
       specs: "Material: High-Gloss Polymer & Virgin Plastic | Style: New Fancy Designer Finish | Teeth: Anti-Static Fine & Medium Teeth",
-      images: ["assets/uploads/Quick-ifo-cards/img3.png", "assets/uploads/Quick-ifo-cards/img1.png", "assets/uploads/Quick-ifo-cards/img4.png"],
+      images: ["assets/uploads/banner/img1.png", "assets/uploads/banner/img2.png", "assets/uploads/banner/img3.png"],
       products: [
-        { name: "Fancy Designer Model A", size: "22 CM", weight: "18 Grams", img: "assets/uploads/Quick-ifo-cards/img3.png" },
-        { name: "Fancy Wave Grip", size: "21 CM", weight: "16.5 Grams", img: "assets/uploads/Quick-ifo-cards/img1.png" },
-        { name: "Fancy Color Burst", size: "20 CM", weight: "15 Grams", img: "assets/uploads/Quick-ifo-cards/img4.png" }
+        { name: "1 NO FANCY.", quantity: "120 Dz", price: "₹120.00", img: "assets/uploads/banner/img1.png" },
+        { name: "2 NO FANCY", quantity: "136 Dz.", price: "₹136.00", img: "assets/uploads/banner/img2.png" },
+        { name: "3 NO FANCY", quantity: "121 Dz.", price: "₹121.00", img: "assets/uploads/banner/img3.png" }
       ]
     },
     "jessore-comb": {
@@ -1007,8 +1022,10 @@ function initProductDetailPage() {
           <div>
             <h4 class="font-bold text-gray-900 text-sm sm:text-base group-hover:text-brand-primary transition">${p.name}</h4>
             <div class="text-xs text-gray-500 mt-1 font-medium space-y-0.5">
-              <p>Size: <span class="text-gray-800 font-semibold">${p.size}</span></p>
-              <p>Weight: <span class="text-gray-800 font-semibold">${p.weight}</span></p>
+              ${p.quantity ? `<p>Quantity: <span class="text-gray-800 font-semibold">${p.quantity}</span></p>` : ''}
+              ${p.price ? `<p>Price: <span class="text-brand-primary font-bold text-base">${p.price}</span></p>` : ''}
+              ${p.size && !p.quantity ? `<p>Size: <span class="text-gray-800 font-semibold">${p.size}</span></p>` : ''}
+              ${p.weight && !p.price ? `<p>Weight: <span class="text-gray-800 font-semibold">${p.weight}</span></p>` : ''}
             </div>
           </div>
         </div>
@@ -1018,10 +1035,19 @@ function initProductDetailPage() {
 
   // Parse URL query ?cat=...
   const urlParams = new URLSearchParams(window.location.search);
-  const catParam = (urlParams.get('cat') || 'ladies').toLowerCase();
+  const catParam = (urlParams.get('cat') || 'jessore-fancy').toLowerCase();
 
-  let initialKey = "ladies";
-  if (catParam.includes("wood")) initialKey = "wooden";
+  let initialKey = "jessore-fancy";
+  if (catParam.includes("jessore") && catParam.includes("fancy")) initialKey = "jessore-fancy";
+  else if (catParam.includes("jessore-comb")) initialKey = "jessore-comb";
+  else if (catParam.includes("plastic-jessore-tooth")) initialKey = "plastic-jessore-tooth";
+  else if (catParam.includes("plastic-box")) initialKey = "plastic-box";
+  else if (catParam.includes("plastic-pitta")) initialKey = "plastic-pitta";
+  else if (catParam.includes("neem-wooden")) initialKey = "neem-wooden";
+  else if (catParam.includes("plastic-razor")) initialKey = "plastic-razor";
+  else if (catParam.includes("shikha-kangha")) initialKey = "shikha-kangha";
+  else if (catParam.includes("roll-comb")) initialKey = "roll-comb";
+  else if (catParam.includes("wood")) initialKey = "wooden";
   else if (catParam.includes("pocket")) initialKey = "pocket";
   else if (catParam.includes("family")) initialKey = "family";
   else if (catParam.includes("lice")) initialKey = "lice";
@@ -1029,6 +1055,7 @@ function initProductDetailPage() {
   else if (catParam.includes("salon")) initialKey = "salon";
   else if (catParam.includes("brush")) initialKey = "brushes";
   else if (catParam.includes("ladies") || catParam.includes("9 inch")) initialKey = "ladies";
+  else if (catParam.includes("jessore")) initialKey = "jessore-comb";
   else initialKey = "hair-comb";
 
   loadCategory(initialKey);
