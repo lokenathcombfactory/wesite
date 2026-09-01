@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initProductDetailPage();
 });
 
+
 /* 0. Notification Bar (Under Progress) */
 function initNoticeBanner() {
   const banner = document.getElementById('under-progress-banner');
@@ -540,12 +541,12 @@ function initImageLightboxModal() {
     }
 
     const isProductPhoto = clickedImg.closest('.product-item-card') ||
-                           clickedImg.closest('#modal-product-grid') ||
-                           clickedImg.closest('#detail-product-grid') ||
-                           clickedImg.closest('.gallery-item') ||
-                           clickedImg.id === 'modal-product-img' ||
-                           clickedImg.id === 'detail-product-img' ||
-                           clickedImg.classList.contains('zoomable-img');
+      clickedImg.closest('#modal-product-grid') ||
+      clickedImg.closest('#detail-product-grid') ||
+      clickedImg.closest('.gallery-item') ||
+      clickedImg.id === 'modal-product-img' ||
+      clickedImg.id === 'detail-product-img' ||
+      clickedImg.classList.contains('zoomable-img');
 
     if (isProductPhoto) {
       e.preventDefault();
