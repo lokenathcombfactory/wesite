@@ -152,3 +152,25 @@ h4,
 .product-filter-btn:active {
   transform: scale(0.95);
 }
+
+/* Clickable Zoomable Product Images */
+.product-item-card img,
+#modal-product-grid img,
+#detail-product-grid img,
+#modal-product-img,
+#detail-product-img,
+.gallery-item img,
+img.zoomable-img {
+  cursor: zoom-in !important;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.product-item-card img:hover,
+#modal-product-grid img:hover,
+#detail-product-grid img:hover,
+#modal-product-img:hover,
+#detail-product-img:hover,
+.gallery-item img:hover,
+img.zoomable-img:hover {
+  transform: scale(1.04);
+}
