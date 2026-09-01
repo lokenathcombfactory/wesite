@@ -540,7 +540,7 @@
       </div>
 
       <!-- Grid of Cards -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
         <!-- Card 1 -->
         <div
           class="product-card bg-white rounded-2xl overflow-hidden shadow border border-gray-100 flex flex-col justify-between product-item-card"
@@ -1355,44 +1355,74 @@
 
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
 
-          <!-- Left Sidebar Tabs -->
-          <div
-            class="lg:col-span-4 bg-gray-50 p-3 sm:p-4 rounded-2xl border border-gray-200/80 space-y-1.5 shadow-sm max-h-[420px] overflow-y-auto">
-            <button
-              class="modal-tab-btn w-full text-left px-4 py-3 rounded-xl text-xs sm:text-sm font-semibold transition bg-brand-primary text-white shadow"
-              data-category="ladies">9 Inch Ladies Comb</button>
-            <button
-              class="modal-tab-btn w-full text-left px-4 py-3 rounded-xl text-xs sm:text-sm font-semibold transition text-gray-700 hover:bg-white hover:text-brand-primary"
-              data-category="wooden">Wooden Comb</button>
-            <button
-              class="modal-tab-btn w-full text-left px-4 py-3 rounded-xl text-xs sm:text-sm font-semibold transition text-gray-700 hover:bg-white hover:text-brand-primary"
-              data-category="pocket">Pocket Comb</button>
-            <button
-              class="modal-tab-btn w-full text-left px-4 py-3 rounded-xl text-xs sm:text-sm font-semibold transition text-gray-700 hover:bg-white hover:text-brand-primary"
-              data-category="family">Hair Comb Family Pack</button>
-            <button
-              class="modal-tab-btn w-full text-left px-4 py-3 rounded-xl text-xs sm:text-sm font-semibold transition text-gray-700 hover:bg-white hover:text-brand-primary"
-              data-category="lice">Lice Comb</button>
-            <button
-              class="modal-tab-btn w-full text-left px-4 py-3 rounded-xl text-xs sm:text-sm font-semibold transition text-gray-700 hover:bg-white hover:text-brand-primary"
-              data-category="pro-brushes">Professional Hair Brushes</button>
-            <button
-              class="modal-tab-btn w-full text-left px-4 py-3 rounded-xl text-xs sm:text-sm font-semibold transition text-gray-700 hover:bg-white hover:text-brand-primary"
-              data-category="brushes">Hair Brushes</button>
-            <button
-              class="modal-tab-btn w-full text-left px-4 py-3 rounded-xl text-xs sm:text-sm font-semibold transition text-gray-700 hover:bg-white hover:text-brand-primary"
-              data-category="hotel">Hotel Comb</button>
-            <button
-              class="modal-tab-btn w-full text-left px-4 py-3 rounded-xl text-xs sm:text-sm font-semibold transition text-gray-700 hover:bg-white hover:text-brand-primary"
-              data-category="salon">Salon Comb</button>
-            <button
-              class="modal-tab-btn w-full text-left px-4 py-3 rounded-xl text-xs sm:text-sm font-semibold transition text-gray-700 hover:bg-white hover:text-brand-primary"
-              data-category="hair-comb">Hair Comb</button>
+          <!-- Left Sidebar Tabs & Mobile Dropdown -->
+          <div class="lg:col-span-4 space-y-3">
+            <!-- Mobile Select Dropdown (Visible on Mobile < lg) -->
+            <div class="lg:hidden bg-gray-50 p-3.5 rounded-2xl border border-gray-200/80 shadow-sm">
+              <label for="modal-category-select" class="block text-xs font-bold uppercase tracking-wider text-brand-primary mb-1.5">
+                📁 Select Category
+              </label>
+              <div class="relative">
+                <select id="modal-category-select" class="w-full appearance-none bg-white text-gray-900 font-semibold text-xs sm:text-sm px-3.5 py-3 pr-10 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-brand-primary cursor-pointer transition shadow-sm">
+                  <option value="ladies">9 Inch Ladies Comb</option>
+                  <option value="wooden">Wooden Comb</option>
+                  <option value="pocket">Pocket Comb</option>
+                  <option value="family">Hair Comb Family Pack</option>
+                  <option value="lice">Lice Comb</option>
+                  <option value="pro-brushes">Professional Hair Brushes</option>
+                  <option value="brushes">Hair Brushes</option>
+                  <option value="hotel">Hotel Comb</option>
+                  <option value="salon">Salon Comb</option>
+                  <option value="hair-comb">Hair Comb</option>
+                  <option value="jessore-fancy">Jessore New Fancy Comb</option>
+                  <option value="jessore-comb">Jessore Comb</option>
+                </select>
+                <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3 text-brand-primary">
+                  <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20">
+                    <path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
+
+            <!-- Desktop Vertical Sidebar List (Visible on Desktop >= lg) -->
+            <div class="hidden lg:block bg-gray-50 p-3 sm:p-4 rounded-2xl border border-gray-200/80 space-y-1.5 shadow-sm max-h-[420px] overflow-y-auto">
+              <button
+                class="modal-tab-btn w-full text-left px-4 py-3 rounded-xl text-xs sm:text-sm font-semibold transition bg-brand-primary text-white shadow"
+                data-category="ladies">9 Inch Ladies Comb</button>
+              <button
+                class="modal-tab-btn w-full text-left px-4 py-3 rounded-xl text-xs sm:text-sm font-semibold transition text-gray-700 hover:bg-white hover:text-brand-primary"
+                data-category="wooden">Wooden Comb</button>
+              <button
+                class="modal-tab-btn w-full text-left px-4 py-3 rounded-xl text-xs sm:text-sm font-semibold transition text-gray-700 hover:bg-white hover:text-brand-primary"
+                data-category="pocket">Pocket Comb</button>
+              <button
+                class="modal-tab-btn w-full text-left px-4 py-3 rounded-xl text-xs sm:text-sm font-semibold transition text-gray-700 hover:bg-white hover:text-brand-primary"
+                data-category="family">Hair Comb Family Pack</button>
+              <button
+                class="modal-tab-btn w-full text-left px-4 py-3 rounded-xl text-xs sm:text-sm font-semibold transition text-gray-700 hover:bg-white hover:text-brand-primary"
+                data-category="lice">Lice Comb</button>
+              <button
+                class="modal-tab-btn w-full text-left px-4 py-3 rounded-xl text-xs sm:text-sm font-semibold transition text-gray-700 hover:bg-white hover:text-brand-primary"
+                data-category="pro-brushes">Professional Hair Brushes</button>
+              <button
+                class="modal-tab-btn w-full text-left px-4 py-3 rounded-xl text-xs sm:text-sm font-semibold transition text-gray-700 hover:bg-white hover:text-brand-primary"
+                data-category="brushes">Hair Brushes</button>
+              <button
+                class="modal-tab-btn w-full text-left px-4 py-3 rounded-xl text-xs sm:text-sm font-semibold transition text-gray-700 hover:bg-white hover:text-brand-primary"
+                data-category="hotel">Hotel Comb</button>
+              <button
+                class="modal-tab-btn w-full text-left px-4 py-3 rounded-xl text-xs sm:text-sm font-semibold transition text-gray-700 hover:bg-white hover:text-brand-primary"
+                data-category="salon">Salon Comb</button>
+              <button
+                class="modal-tab-btn w-full text-left px-4 py-3 rounded-xl text-xs sm:text-sm font-semibold transition text-gray-700 hover:bg-white hover:text-brand-primary"
+                data-category="hair-comb">Hair Comb</button>
+            </div>
           </div>
 
           <!-- Right Grid Container for Model Cards -->
           <div id="modal-product-grid"
-            class="lg:col-span-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 max-h-[480px] overflow-y-auto p-1">
+            class="lg:col-span-8 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-2.5 sm:gap-4 max-h-[480px] overflow-y-auto p-1">
             <!-- Dynamic model cards generated via JavaScript -->
           </div>
 

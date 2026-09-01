@@ -280,51 +280,80 @@
 
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
 
-          <!-- Left Sidebar Category Tabs -->
-          <div class="lg:col-span-4 bg-gray-50 p-4 rounded-3xl border border-gray-200/80 space-y-2 shadow-sm">
-            <h4 class="text-xs font-bold uppercase tracking-wider text-gray-500 px-3 mb-2">Category List</h4>
-            <button
-              class="detail-tab-btn w-full text-left px-4 py-3.5 rounded-2xl text-xs sm:text-sm font-semibold transition bg-brand-primary text-white shadow"
-              data-category="jessore-fancy">Jessore New Fancy Comb</button>
-            <button
-              class="detail-tab-btn w-full text-left px-4 py-3.5 rounded-2xl text-xs sm:text-sm font-semibold transition text-gray-700 hover:bg-white hover:text-brand-primary"
-              data-category="jessore-comb">Jessore Comb</button>
-            <button
-              class="detail-tab-btn w-full text-left px-4 py-3.5 rounded-2xl text-xs sm:text-sm font-semibold transition text-gray-700 hover:bg-white hover:text-brand-primary"
-              data-category="plastic-jessore-tooth">Plastic Jessore Tooth Comb</button>
-            <button
-              class="detail-tab-btn w-full text-left px-4 py-3.5 rounded-2xl text-xs sm:text-sm font-semibold transition text-gray-700 hover:bg-white hover:text-brand-primary"
-              data-category="plastic-box">Plastic Box Comb</button>
-            <button
-              class="detail-tab-btn w-full text-left px-4 py-3.5 rounded-2xl text-xs sm:text-sm font-semibold transition text-gray-700 hover:bg-white hover:text-brand-primary"
-              data-category="plastic-pitta">Plastic PITTA Comb</button>
-            <button
-              class="detail-tab-btn w-full text-left px-4 py-3.5 rounded-2xl text-xs sm:text-sm font-semibold transition text-gray-700 hover:bg-white hover:text-brand-primary"
-              data-category="neem-wooden">Neem Wooden Comb</button>
-            <button
-              class="detail-tab-btn w-full text-left px-4 py-3.5 rounded-2xl text-xs sm:text-sm font-semibold transition text-gray-700 hover:bg-white hover:text-brand-primary"
-              data-category="plastic-razor">Plastic Razor</button>
-            <button
-              class="detail-tab-btn w-full text-left px-4 py-3.5 rounded-2xl text-xs sm:text-sm font-semibold transition text-gray-700 hover:bg-white hover:text-brand-primary"
-              data-category="shikha-kangha">Shikha Kangha Set</button>
-            <button
-              class="detail-tab-btn w-full text-left px-4 py-3.5 rounded-2xl text-xs sm:text-sm font-semibold transition text-gray-700 hover:bg-white hover:text-brand-primary"
-              data-category="roll-comb">Roll Comb</button>
-            <button
-              class="detail-tab-btn w-full text-left px-4 py-3.5 rounded-2xl text-xs sm:text-sm font-semibold transition text-gray-700 hover:bg-white hover:text-brand-primary"
-              data-category="ladies">9 Inch Ladies Comb</button>
+          <!-- Left Sidebar Category Tabs & Mobile Dropdown -->
+          <div class="lg:col-span-4 space-y-4">
+            <!-- Mobile Select Dropdown Button (Visible on Mobile < lg) -->
+            <div class="lg:hidden bg-gray-50 p-4 rounded-2xl border border-gray-200/80 shadow-sm">
+              <label for="detail-category-select" class="block text-xs font-bold uppercase tracking-wider text-brand-primary mb-2">
+                📁 Select Category
+              </label>
+              <div class="relative">
+                <select id="detail-category-select" class="w-full appearance-none bg-white text-gray-900 font-semibold text-sm px-4 py-3.5 pr-10 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-brand-primary focus:border-brand-primary shadow-sm cursor-pointer transition">
+                  <option value="jessore-fancy">Jessore New Fancy Comb</option>
+                  <option value="jessore-comb">Jessore Comb</option>
+                  <option value="plastic-jessore-tooth">Plastic Jessore Tooth Comb</option>
+                  <option value="plastic-box">Plastic Box Comb</option>
+                  <option value="plastic-pitta">Plastic PITTA Comb</option>
+                  <option value="neem-wooden">Neem Wooden Comb</option>
+                  <option value="plastic-razor">Plastic Razor</option>
+                  <option value="shikha-kangha">Shikha Kangha Set</option>
+                  <option value="roll-comb">Roll Comb</option>
+                  <option value="ladies">9 Inch Ladies Comb</option>
+                </select>
+                <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-3.5 text-brand-primary">
+                  <svg class="w-5 h-5 fill-current" viewBox="0 0 20 20">
+                    <path d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"/>
+                  </svg>
+                </div>
+              </div>
+            </div>
 
-            <!-- Direct WhatsApp Catalog Banner -->
-            <div class="pt-4 border-t border-gray-200 mt-2">
-              <a href="https://wa.me/c/218601520894144" target="_blank"
-                class="touch-target flex items-center justify-center gap-2 bg-[#25d366] hover:bg-[#128c7e] text-white text-xs font-semibold px-4 py-3 rounded-2xl shadow transition text-center">
-                <span>📱 Browse Full WhatsApp Catalog</span>
-              </a>
+            <!-- Desktop Vertical Sidebar List (Visible on Desktop >= lg) -->
+            <div class="hidden lg:block bg-gray-50 p-4 rounded-3xl border border-gray-200/80 space-y-2 shadow-sm">
+              <h4 class="text-xs font-bold uppercase tracking-wider text-gray-500 px-3 mb-2">Category List</h4>
+              <button
+                class="detail-tab-btn w-full text-left px-4 py-3.5 rounded-2xl text-xs sm:text-sm font-semibold transition bg-brand-primary text-white shadow"
+                data-category="jessore-fancy">Jessore New Fancy Comb</button>
+              <button
+                class="detail-tab-btn w-full text-left px-4 py-3.5 rounded-2xl text-xs sm:text-sm font-semibold transition text-gray-700 hover:bg-white hover:text-brand-primary"
+                data-category="jessore-comb">Jessore Comb</button>
+              <button
+                class="detail-tab-btn w-full text-left px-4 py-3.5 rounded-2xl text-xs sm:text-sm font-semibold transition text-gray-700 hover:bg-white hover:text-brand-primary"
+                data-category="plastic-jessore-tooth">Plastic Jessore Tooth Comb</button>
+              <button
+                class="detail-tab-btn w-full text-left px-4 py-3.5 rounded-2xl text-xs sm:text-sm font-semibold transition text-gray-700 hover:bg-white hover:text-brand-primary"
+                data-category="plastic-box">Plastic Box Comb</button>
+              <button
+                class="detail-tab-btn w-full text-left px-4 py-3.5 rounded-2xl text-xs sm:text-sm font-semibold transition text-gray-700 hover:bg-white hover:text-brand-primary"
+                data-category="plastic-pitta">Plastic PITTA Comb</button>
+              <button
+                class="detail-tab-btn w-full text-left px-4 py-3.5 rounded-2xl text-xs sm:text-sm font-semibold transition text-gray-700 hover:bg-white hover:text-brand-primary"
+                data-category="neem-wooden">Neem Wooden Comb</button>
+              <button
+                class="detail-tab-btn w-full text-left px-4 py-3.5 rounded-2xl text-xs sm:text-sm font-semibold transition text-gray-700 hover:bg-white hover:text-brand-primary"
+                data-category="plastic-razor">Plastic Razor</button>
+              <button
+                class="detail-tab-btn w-full text-left px-4 py-3.5 rounded-2xl text-xs sm:text-sm font-semibold transition text-gray-700 hover:bg-white hover:text-brand-primary"
+                data-category="shikha-kangha">Shikha Kangha Set</button>
+              <button
+                class="detail-tab-btn w-full text-left px-4 py-3.5 rounded-2xl text-xs sm:text-sm font-semibold transition text-gray-700 hover:bg-white hover:text-brand-primary"
+                data-category="roll-comb">Roll Comb</button>
+              <button
+                class="detail-tab-btn w-full text-left px-4 py-3.5 rounded-2xl text-xs sm:text-sm font-semibold transition text-gray-700 hover:bg-white hover:text-brand-primary"
+                data-category="ladies">9 Inch Ladies Comb</button>
+
+              <!-- Direct WhatsApp Catalog Banner -->
+              <div class="pt-4 border-t border-gray-200 mt-2">
+                <a href="https://wa.me/c/218601520894144" target="_blank"
+                  class="touch-target flex items-center justify-center gap-2 bg-[#25d366] hover:bg-[#128c7e] text-white text-xs font-semibold px-4 py-3 rounded-2xl shadow transition text-center">
+                  <span>📱 Browse Full WhatsApp Catalog</span>
+                </a>
+              </div>
             </div>
           </div>
 
           <!-- Right Product Model Cards Grid -->
-          <div id="detail-product-grid" class="lg:col-span-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
+          <div id="detail-product-grid" class="lg:col-span-8 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-3 sm:gap-5">
             <!-- Dynamic model cards rendered via JavaScript -->
           </div>
 

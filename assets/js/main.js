@@ -674,6 +674,7 @@ function initProductModals() {
   const modalSpecs = document.getElementById('modal-product-specs');
   const modalGrid = document.getElementById('modal-product-grid');
   const tabBtns = document.querySelectorAll('.modal-tab-btn');
+  const modalSelect = document.getElementById('modal-category-select');
 
   if (!modal) return;
 
@@ -907,7 +908,8 @@ function initProductModals() {
       }, 3000); // 3-second image auto scroll
     }
 
-    // Update Left Sidebar Tabs active state (#800033)
+    // Update Left Sidebar Tabs active state (#800033) & Mobile Dropdown
+    if (modalSelect) modalSelect.value = catKey;
     tabBtns.forEach(btn => {
       const btnCat = btn.getAttribute('data-category');
       if (btnCat === catKey) {
@@ -920,17 +922,17 @@ function initProductModals() {
     // Render Right Grid of Model Cards
     if (modalGrid) {
       modalGrid.innerHTML = data.products.map(p => `
-        <div class="bg-gray-50 hover:bg-pink-50/60 p-3 rounded-2xl border border-gray-200/80 shadow-sm hover:shadow-md transition text-center group flex flex-col justify-between">
-          <div class="h-32 bg-white rounded-xl flex items-center justify-center p-2 mb-2 border border-gray-100 overflow-hidden">
+        <div class="bg-gray-50 hover:bg-pink-50/60 p-2.5 sm:p-3 rounded-2xl border border-gray-200/80 shadow-sm hover:shadow-md transition text-center group flex flex-col justify-between">
+          <div class="h-24 sm:h-32 bg-white rounded-xl flex items-center justify-center p-1.5 sm:p-2 mb-2 border border-gray-100 overflow-hidden">
             <img src="${p.img}" alt="${p.name}" class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300">
           </div>
           <div>
-            <h4 class="font-bold text-gray-900 text-xs sm:text-sm group-hover:text-brand-primary transition">${p.name}</h4>
-            <div class="text-[11px] text-gray-500 mt-1 font-medium space-y-0.5">
-              ${p.quantity ? `<p>Qty: <span class="text-gray-800 font-semibold">${p.quantity}</span></p>` : ''}
-              ${p.price ? `<p>Price: <span class="text-brand-primary font-bold text-sm">${p.price}</span></p>` : ''}
-              ${p.size && !p.quantity ? `<p>Size: <span class="text-gray-800 font-semibold">${p.size}</span></p>` : ''}
-              ${p.weight && !p.price ? `<p>Weight: <span class="text-gray-800 font-semibold">${p.weight}</span></p>` : ''}
+            <h4 class="font-bold text-gray-900 text-[11px] sm:text-sm group-hover:text-brand-primary transition leading-tight line-clamp-1 sm:line-clamp-none">${p.name}</h4>
+            <div class="text-[10px] sm:text-[11px] text-gray-500 mt-1 font-medium space-y-0.5">
+              ${p.quantity ? `<p class="truncate">Qty: <span class="text-gray-800 font-semibold">${p.quantity}</span></p>` : ''}
+              ${p.price ? `<p class="mt-0.5"><span class="text-brand-primary font-extrabold text-[11px] sm:text-xs bg-brand-light px-1.5 py-0.5 rounded-md inline-block shadow-2xs">${p.price}</span></p>` : ''}
+              ${p.size && !p.quantity ? `<p class="truncate">Size: <span class="text-gray-800 font-semibold">${p.size}</span></p>` : ''}
+              ${p.weight && !p.price ? `<p class="truncate">Wt: <span class="text-gray-800 font-semibold">${p.weight}</span></p>` : ''}
             </div>
           </div>
         </div>
@@ -964,7 +966,12 @@ function initProductModals() {
     });
   });
 
-  // Bind Left Sidebar Tabs
+  // Bind Left Sidebar Tabs & Mobile Dropdown Select
+  if (modalSelect) {
+    modalSelect.addEventListener('change', (e) => {
+      renderCategory(e.target.value);
+    });
+  }
   tabBtns.forEach(btn => {
     btn.addEventListener('click', (e) => {
       e.stopPropagation();
@@ -1026,6 +1033,7 @@ function initProductDetailPage() {
   const detailSpecs = document.getElementById('detail-product-specs');
   const detailGrid = document.getElementById('detail-product-grid');
   const tabBtns = document.querySelectorAll('.detail-tab-btn');
+  const detailSelect = document.getElementById('detail-category-select');
   const breadcrumbCat = document.getElementById('page-breadcrumb-cat');
 
   if (!detailTitle || !detailGrid) return;
@@ -1229,7 +1237,8 @@ function initProductDetailPage() {
       }, 3000); // 3-second image auto scroll
     }
 
-    // Active Sidebar Tab Highlight (#800033)
+    // Active Sidebar Tab Highlight (#800033) & Mobile Dropdown
+    if (detailSelect) detailSelect.value = catKey;
     tabBtns.forEach(btn => {
       const btnCat = btn.getAttribute('data-category');
       if (btnCat === catKey) {
@@ -1242,17 +1251,17 @@ function initProductDetailPage() {
     // Render Right Model Cards Grid
     if (detailGrid) {
       detailGrid.innerHTML = data.products.map(p => `
-        <div class="bg-gray-50 hover:bg-pink-50/60 p-4 rounded-2xl border border-gray-200/80 shadow-sm hover:shadow-md transition text-center group flex flex-col justify-between">
-          <div class="h-40 bg-white rounded-xl flex items-center justify-center p-3 mb-3 border border-gray-100 overflow-hidden">
+        <div class="bg-gray-50 hover:bg-pink-50/60 p-2.5 sm:p-4 rounded-2xl border border-gray-200/80 shadow-sm hover:shadow-md transition text-center group flex flex-col justify-between">
+          <div class="h-28 sm:h-40 bg-white rounded-xl flex items-center justify-center p-2 sm:p-3 mb-2 sm:mb-3 border border-gray-100 overflow-hidden">
             <img src="${p.img}" alt="${p.name}" class="max-h-full max-w-full object-contain group-hover:scale-105 transition-transform duration-300">
           </div>
           <div>
-            <h4 class="font-bold text-gray-900 text-sm sm:text-base group-hover:text-brand-primary transition">${p.name}</h4>
-            <div class="text-xs text-gray-500 mt-1 font-medium space-y-0.5">
-              ${p.quantity ? `<p>Quantity: <span class="text-gray-800 font-semibold">${p.quantity}</span></p>` : ''}
-              ${p.price ? `<p>Price: <span class="text-brand-primary font-bold text-base">${p.price}</span></p>` : ''}
-              ${p.size && !p.quantity ? `<p>Size: <span class="text-gray-800 font-semibold">${p.size}</span></p>` : ''}
-              ${p.weight && !p.price ? `<p>Weight: <span class="text-gray-800 font-semibold">${p.weight}</span></p>` : ''}
+            <h4 class="font-bold text-gray-900 text-xs sm:text-base group-hover:text-brand-primary transition leading-tight line-clamp-1 sm:line-clamp-none">${p.name}</h4>
+            <div class="text-[10px] sm:text-xs text-gray-500 mt-1 font-medium space-y-0.5">
+              ${p.quantity ? `<p class="truncate">Qty: <span class="text-gray-800 font-semibold">${p.quantity}</span></p>` : ''}
+              ${p.price ? `<p class="mt-1"><span class="text-brand-primary font-extrabold text-xs sm:text-base bg-brand-light/90 px-2 py-0.5 rounded-md inline-block shadow-2xs">${p.price}</span></p>` : ''}
+              ${p.size && !p.quantity ? `<p class="truncate">Size: <span class="text-gray-800 font-semibold">${p.size}</span></p>` : ''}
+              ${p.weight && !p.price ? `<p class="truncate">Weight: <span class="text-gray-800 font-semibold">${p.weight}</span></p>` : ''}
             </div>
           </div>
         </div>
@@ -1287,7 +1296,12 @@ function initProductDetailPage() {
 
   loadCategory(initialKey);
 
-  // Tab Listeners
+  // Tab & Mobile Dropdown Listeners
+  if (detailSelect) {
+    detailSelect.addEventListener('change', (e) => {
+      loadCategory(e.target.value);
+    });
+  }
   tabBtns.forEach(btn => {
     btn.addEventListener('click', (e) => {
       e.stopPropagation();
