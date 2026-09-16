@@ -28,13 +28,6 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
-  <!-- Gallery Page -->
-  <url>
-    <loc>https://lokenathcombfactory.vercel.app/gallery/</loc>
-    <lastmod>2026-07-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
   <!-- Contact Us Page -->
   <url>
     <loc>https://lokenathcombfactory.vercel.app/contact-us/</loc>
