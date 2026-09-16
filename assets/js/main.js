@@ -684,20 +684,20 @@ function initProductModals() {
       title: "9 Inch Ladies Comb Manufacturers",
       desc: "<p><strong>Loke Nath Comb Factory</strong> is the Reliable <strong>9 Inch Ladies Comb Manufacturer</strong> in Bongaon, West Bengal, India. The 9-inch ladies' comb that we make is not just a functional product, it is also a necessity in your hair care toolbox this means that this comb will accentuate your grooming kit. It is easy to use and convenient for daily shaving and styling.</p><p>We are the Versatile <strong>9 Inch Ladies Comb Exporters in India</strong>. Our combs are engineered with high-grade polymer featuring smooth anti-static teeth that glide effortlessly through long or thick hair without causing breakage or scalp discomfort.</p>",
       specs: "Material: Premium Grade Polymer & Acetate | Length: 22 CM | Features: Fine & Wide Teeth Combo | Anti-Static: Yes",
-      images: ["/assets/uploads/banner/img3.png", "/assets/uploads/banner/img1.png", "/assets/uploads/banner/img4.png"],
+      images: ["/assets/uploads/banner/img3.webp", "/assets/uploads/banner/img1.webp", "/assets/uploads/banner/img4.webp"],
       products: [
-        { name: "Spider", size: "22 CM", weight: "14.7 Grams", img: "/assets/uploads/banner/img3.png" },
-        { name: "Airline", size: "22 CM", weight: "19.7 Grams", img: "/assets/uploads/banner/img1.png" },
-        { name: "Surya", size: "21 CM", weight: "16.7 Grams", img: "/assets/uploads/banner/img4.png" },
-        { name: "TOPLINE", size: "22 CM", weight: "19.5 Grams", img: "/assets/uploads/banner/img3.png" },
-        { name: "TIK TIK", size: "21 CM", weight: "11.8 Grams", img: "/assets/uploads/banner/img1.png" },
-        { name: "SURYA KIRAN", size: "20 CM", weight: "16.2 Grams", img: "/assets/uploads/banner/img4.png" },
-        { name: "SULTAN", size: "21 CM", weight: "17 Grams", img: "/assets/uploads/banner/img3.png" },
-        { name: "APPLE", size: "21 CM", weight: "19.4 Grams", img: "/assets/uploads/banner/img1.png" },
-        { name: "ROCKET", size: "22 CM", weight: "24 Grams", img: "/assets/uploads/banner/img4.png" },
-        { name: "MAGIC", size: "22 CM", weight: "21.7 Grams", img: "/assets/uploads/banner/img3.png" },
-        { name: "GRU", size: "19 CM", weight: "21.7 Grams", img: "/assets/uploads/banner/img1.png" },
-        { name: "CLASSIC", size: "22 CM", weight: "20.5 Grams", img: "/assets/uploads/banner/img4.png" }
+        { name: "Spider", size: "22 CM", weight: "14.7 Grams", img: "/assets/uploads/banner/img3.webp" },
+        { name: "Airline", size: "22 CM", weight: "19.7 Grams", img: "/assets/uploads/banner/img1.webp" },
+        { name: "Surya", size: "21 CM", weight: "16.7 Grams", img: "/assets/uploads/banner/img4.webp" },
+        { name: "TOPLINE", size: "22 CM", weight: "19.5 Grams", img: "/assets/uploads/banner/img3.webp" },
+        { name: "TIK TIK", size: "21 CM", weight: "11.8 Grams", img: "/assets/uploads/banner/img1.webp" },
+        { name: "SURYA KIRAN", size: "20 CM", weight: "16.2 Grams", img: "/assets/uploads/banner/img4.webp" },
+        { name: "SULTAN", size: "21 CM", weight: "17 Grams", img: "/assets/uploads/banner/img3.webp" },
+        { name: "APPLE", size: "21 CM", weight: "19.4 Grams", img: "/assets/uploads/banner/img1.webp" },
+        { name: "ROCKET", size: "22 CM", weight: "24 Grams", img: "/assets/uploads/banner/img4.webp" },
+        { name: "MAGIC", size: "22 CM", weight: "21.7 Grams", img: "/assets/uploads/banner/img3.webp" },
+        { name: "GRU", size: "19 CM", weight: "21.7 Grams", img: "/assets/uploads/banner/img1.webp" },
+        { name: "CLASSIC", size: "22 CM", weight: "20.5 Grams", img: "/assets/uploads/banner/img4.webp" }
       ]
     },
     "wooden": {
@@ -705,96 +705,96 @@ function initProductModals() {
       desc: "<p><strong>Loke Nath Comb Factory</strong> is the Premier <strong>Neem Wood Fancy Box Comb Manufacturer</strong> in Bongaon, West Bengal, India. Handcrafted from 100% natural Neem Wood to naturally condition hair and massage scalp follicles.</p>",
       specs: "Material: 100% Natural Neem Wood | Anti-Static: 100% | Teeth: Polished Smooth Rounded Tips",
       images: [
-        "/assets/uploads/neem-wood/01.png",
-        "/assets/uploads/neem-wood/02.png",
-        "/assets/uploads/neem-wood/03.png",
-        "/assets/uploads/neem-wood/04.png",
-        "/assets/uploads/neem-wood/05.png",
-        "/assets/uploads/neem-wood/06.png",
-        "/assets/uploads/neem-wood/07.png",
-        "/assets/uploads/neem-wood/08.png"
+        "/assets/uploads/neem-wood/01.webp",
+        "/assets/uploads/neem-wood/02.webp",
+        "/assets/uploads/neem-wood/03.webp",
+        "/assets/uploads/neem-wood/04.webp",
+        "/assets/uploads/neem-wood/05.webp",
+        "/assets/uploads/neem-wood/06.webp",
+        "/assets/uploads/neem-wood/07.webp",
+        "/assets/uploads/neem-wood/08.webp"
       ],
       products: [
-        { name: "NO 1 (NEEM WOOD COMB)", quantity: "Rs 30 pic's (20 pic's Box)", price: "₹30.00", img: "/assets/uploads/neem-wood/01.png" },
-        { name: "NO 2 (NEEM WOOD COMB)", quantity: "Rs 30 pic's (20 pic's Box)", price: "₹30.00", img: "/assets/uploads/neem-wood/02.png" },
-        { name: "NO 3 (NEEM WOOD COMB)", quantity: "Rs 30 pic's (20 pic's Box)", price: "₹30.00", img: "/assets/uploads/neem-wood/03.png" },
-        { name: "NO 4 (NEEM WOOD COMB)", quantity: "Rs 30 pic's (20 pic's Box)", price: "₹30.00", img: "/assets/uploads/neem-wood/04.png" },
-        { name: "NO 5 (NEEM WOOD COMB)", quantity: "Rs 30 pic's (20 pic's Box)", price: "₹30.00", img: "/assets/uploads/neem-wood/05.png" },
-        { name: "NO 6 (NEEM WOOD COMB)", quantity: "Rs 30 pic's (20 pic's Box)", price: "₹30.00", img: "/assets/uploads/neem-wood/06.png" },
-        { name: "NO 7 (NEEM WOOD COMB)", quantity: "Rs 30 pic's (20 pic's Box)", price: "₹30.00", img: "/assets/uploads/neem-wood/07.png" },
-        { name: "NO 8 (NEEM WOOD COMB)", quantity: "Rs 30 pic's (20 pic's Box)", price: "₹30.00", img: "/assets/uploads/neem-wood/08.png" }
+        { name: "NO 1 (NEEM WOOD COMB)", quantity: "Rs 30 pic's (20 pic's Box)", price: "₹30.00", img: "/assets/uploads/neem-wood/01.webp" },
+        { name: "NO 2 (NEEM WOOD COMB)", quantity: "Rs 30 pic's (20 pic's Box)", price: "₹30.00", img: "/assets/uploads/neem-wood/02.webp" },
+        { name: "NO 3 (NEEM WOOD COMB)", quantity: "Rs 30 pic's (20 pic's Box)", price: "₹30.00", img: "/assets/uploads/neem-wood/03.webp" },
+        { name: "NO 4 (NEEM WOOD COMB)", quantity: "Rs 30 pic's (20 pic's Box)", price: "₹30.00", img: "/assets/uploads/neem-wood/04.webp" },
+        { name: "NO 5 (NEEM WOOD COMB)", quantity: "Rs 30 pic's (20 pic's Box)", price: "₹30.00", img: "/assets/uploads/neem-wood/05.webp" },
+        { name: "NO 6 (NEEM WOOD COMB)", quantity: "Rs 30 pic's (20 pic's Box)", price: "₹30.00", img: "/assets/uploads/neem-wood/06.webp" },
+        { name: "NO 7 (NEEM WOOD COMB)", quantity: "Rs 30 pic's (20 pic's Box)", price: "₹30.00", img: "/assets/uploads/neem-wood/07.webp" },
+        { name: "NO 8 (NEEM WOOD COMB)", quantity: "Rs 30 pic's (20 pic's Box)", price: "₹30.00", img: "/assets/uploads/neem-wood/08.webp" }
       ]
     },
     "pocket": {
       title: "Pocket Comb Manufacturers",
       desc: "<p><strong>Loke Nath Comb Factory</strong> is the Leading <strong>Pocket Comb Manufacturer</strong> in West Bengal. Compact, lightweight, and durable grooming combs designed for daily carrying.</p>",
       specs: "Size: 5 Inch Compact | Material: High Impact Polypropylene | Portability: Shirt/Pants Pocket Fit",
-      images: ["/assets/uploads/banner/img1.png", "/assets/uploads/banner/img3.png"],
+      images: ["/assets/uploads/banner/img1.webp", "/assets/uploads/banner/img3.webp"],
       products: [
-        { name: "Mini Pocket", size: "13 CM", weight: "8.5 Grams", img: "/assets/uploads/banner/img1.png" },
-        { name: "Slim Pocket", size: "14 CM", weight: "9.2 Grams", img: "/assets/uploads/banner/img3.png" },
-        { name: "Dual Fine Pocket", size: "13.5 CM", weight: "8.9 Grams", img: "/assets/uploads/banner/img4.png" }
+        { name: "Mini Pocket", size: "13 CM", weight: "8.5 Grams", img: "/assets/uploads/banner/img1.webp" },
+        { name: "Slim Pocket", size: "14 CM", weight: "9.2 Grams", img: "/assets/uploads/banner/img3.webp" },
+        { name: "Dual Fine Pocket", size: "13.5 CM", weight: "8.9 Grams", img: "/assets/uploads/banner/img4.webp" }
       ]
     },
     "family": {
       title: "Hair Comb Family Pack Manufacturers",
       desc: "<p><strong>Loke Nath Comb Factory</strong> produces versatile multi-pack family combs featuring diverse sizes for men, women, and kids in bright vibrant colors.</p>",
       specs: "Pack Size: 4-6 Combs Per Pack | Packaging: Display Card / Box | Material: Virgin Plastic",
-      images: ["/assets/uploads/banner/img3.png", "/assets/uploads/banner/img1.png"],
+      images: ["/assets/uploads/banner/img3.webp", "/assets/uploads/banner/img1.webp"],
       products: [
-        { name: "Family Set 5-Pcs", size: "Mixed 14-22 CM", weight: "85 Grams Pack", img: "/assets/uploads/banner/img3.png" },
-        { name: "Color Burst Pack", size: "Mixed 15-20 CM", weight: "78 Grams Pack", img: "/assets/uploads/banner/img1.png" }
+        { name: "Family Set 5-Pcs", size: "Mixed 14-22 CM", weight: "85 Grams Pack", img: "/assets/uploads/banner/img3.webp" },
+        { name: "Color Burst Pack", size: "Mixed 15-20 CM", weight: "78 Grams Pack", img: "/assets/uploads/banner/img1.webp" }
       ]
     },
     "lice": {
       title: "Hygienic Lice Comb Manufacturers",
       desc: "<p><strong>Loke Nath Comb Factory</strong> is the Trusted <strong>Lice Comb Manufacturer</strong> in India, featuring ultra-fine micro teeth designed for scalp hygiene and nit removal.</p>",
       specs: "Teeth Gap: Ultra Fine Micro-Gap | Material: Rigid Acetate | Safety: Rounded Non-Scratch Tips",
-      images: ["/assets/uploads/banner/img4.png"],
+      images: ["/assets/uploads/banner/img4.webp"],
       products: [
-        { name: "Solon Fine Lice", size: "10 CM", weight: "12 Grams", img: "/assets/uploads/banner/img4.png" },
-        { name: "Double Side Lice", size: "9 CM", weight: "11 Grams", img: "/assets/uploads/banner/img4.png" }
+        { name: "Solon Fine Lice", size: "10 CM", weight: "12 Grams", img: "/assets/uploads/banner/img4.webp" },
+        { name: "Double Side Lice", size: "9 CM", weight: "11 Grams", img: "/assets/uploads/banner/img4.webp" }
       ]
     },
     "pro-brushes": {
       title: "Professional Hair Brushes Manufacturers",
       desc: "<p><strong>Loke Nath Comb Factory</strong> supplies high quality styling paddle brushes and thermal round brushes engineered for salon professional blow-drying and detangling.</p>",
       specs: "Bristles: Soft Ball-Tip Nylon | Grip: Ergonomic Non-Slip Rubberized Handle",
-      images: ["/assets/uploads/catalog_center_showcase.png"],
+      images: ["/assets/uploads/catalog_center_showcase.webp"],
       products: [
-        { name: "Vent Styling Brush", size: "24 CM", weight: "65 Grams", img: "/assets/uploads/catalog_center_showcase.png" },
-        { name: "Round Thermal Brush", size: "23 CM", weight: "58 Grams", img: "/assets/uploads/catalog_center_showcase.png" },
-        { name: "Paddle Cushion Brush", size: "25 CM", weight: "72 Grams", img: "/assets/uploads/catalog_center_showcase.png" }
+        { name: "Vent Styling Brush", size: "24 CM", weight: "65 Grams", img: "/assets/uploads/catalog_center_showcase.webp" },
+        { name: "Round Thermal Brush", size: "23 CM", weight: "58 Grams", img: "/assets/uploads/catalog_center_showcase.webp" },
+        { name: "Paddle Cushion Brush", size: "25 CM", weight: "72 Grams", img: "/assets/uploads/catalog_center_showcase.webp" }
       ]
     },
     "brushes": {
       title: "Hair Brushes Manufacturers",
       desc: "<p><strong>Loke Nath Comb Factory</strong> manufactures lightweight everyday grooming hair brushes crafted with ball-tipped bristles for gentle scalp massaging.</p>",
       specs: "Usage: Everyday Hair Detangling | Material: Durable ABS & Soft Nylon",
-      images: ["/assets/uploads/catalog_center_showcase.png"],
+      images: ["/assets/uploads/catalog_center_showcase.webp"],
       products: [
-        { name: "Daily Detangler", size: "21 CM", weight: "45 Grams", img: "/assets/uploads/catalog_center_showcase.png" },
-        { name: "Travel Hair Brush", size: "16 CM", weight: "32 Grams", img: "/assets/uploads/catalog_center_showcase.png" }
+        { name: "Daily Detangler", size: "21 CM", weight: "45 Grams", img: "/assets/uploads/catalog_center_showcase.webp" },
+        { name: "Travel Hair Brush", size: "16 CM", weight: "32 Grams", img: "/assets/uploads/catalog_center_showcase.webp" }
       ]
     },
     "hotel": {
       title: "Hotel Amenity Comb Manufacturers",
       desc: "<p><strong>Loke Nath Comb Factory</strong> is the Premier <strong>Hotel Amenity Comb Supplier</strong>, manufacturing individually poly-wrapped combs for luxury hotels and resort guest kits.</p>",
       specs: "Wrap: Sealed Polybag Packaging | Material: Eco Virgin Polymer | Colors: White / Ivory / Black",
-      images: ["/assets/uploads/banner/img1.png"],
+      images: ["/assets/uploads/banner/img1.webp"],
       products: [
-        { name: "Hotel Amenity Comb", size: "18 CM", weight: "14 Grams", img: "/assets/uploads/banner/img1.png" },
-        { name: "Compact Resort Comb", size: "15 CM", weight: "10 Grams", img: "/assets/uploads/banner/img1.png" }
+        { name: "Hotel Amenity Comb", size: "18 CM", weight: "14 Grams", img: "/assets/uploads/banner/img1.webp" },
+        { name: "Compact Resort Comb", size: "15 CM", weight: "10 Grams", img: "/assets/uploads/banner/img1.webp" }
       ]
     },
     "salon": {
       title: "Barber & Salon Comb Manufacturers",
       desc: "<p><strong>Loke Nath Comb Factory</strong> manufactures heat-resistant sectioning tail combs and barber fading combs designed for professional hair salons.</p>",
       specs: "Heat Resistance: Up to 180°C | Chemical Resistant: Yes | Usage: Barber Styling & Haircutting",
-      images: ["/assets/uploads/banner/img4.png"],
+      images: ["/assets/uploads/banner/img4.webp"],
       products: [
-        { name: "Tail Sectioning Comb", size: "21 CM", weight: "13 Grams", img: "/assets/uploads/banner/img4.png" },
-        { name: "Barber Clipper Comb", size: "22 CM", weight: "18 Grams", img: "/assets/uploads/banner/img4.png" }
+        { name: "Tail Sectioning Comb", size: "21 CM", weight: "13 Grams", img: "/assets/uploads/banner/img4.webp" },
+        { name: "Barber Clipper Comb", size: "22 CM", weight: "18 Grams", img: "/assets/uploads/banner/img4.webp" }
       ]
     },
     "jessore-comb": {
@@ -802,40 +802,40 @@ function initProductModals() {
       desc: "<p><strong>Loke Nath Comb Factory</strong> is the wholesale manufacturer of authentic <strong>Jessore Combs</strong> in Bongaon & West Bengal. Our classic Jessore collection features precision smooth teeth, high durability, and scalp massage tips.</p><p>Browse our complete live catalog on WhatsApp (<a href='https://wa.me/c/218601520894144' target='_blank' class='text-brand-primary font-bold underline'>View WhatsApp Catalog</a>).</p>",
       specs: "Material: Premium High-Density Polymer & Neem | Style: Classic Jessore Design | Live Catalog: wa.me/c/218601520894144",
       images: [
-        "/assets/uploads/jessoreComb/24nobm.png",
-        "/assets/uploads/jessoreComb/1NOMOTA.png",
-        "/assets/uploads/jessoreComb/SPTT.png",
-        "/assets/uploads/jessoreComb/7NOTT.png",
-        "/assets/uploads/jessoreComb/2NOTT.png",
-        "/assets/uploads/jessoreComb/24NO(P).png",
-        "/assets/uploads/jessoreComb/ROYELTOOTH.png",
-        "/assets/uploads/jessoreComb/2NOTT8DBOX..png",
-        "/assets/uploads/jessoreComb/37NOBTT.png",
-        "/assets/uploads/jessoreComb/33no.png",
-        "/assets/uploads/jessoreComb/8NOJESSORE.png"
+        "/assets/uploads/jessoreComb/24nobm.webp",
+        "/assets/uploads/jessoreComb/1NOMOTA.webp",
+        "/assets/uploads/jessoreComb/SPTT.webp",
+        "/assets/uploads/jessoreComb/7NOTT.webp",
+        "/assets/uploads/jessoreComb/2NOTT.webp",
+        "/assets/uploads/jessoreComb/24NO(P).webp",
+        "/assets/uploads/jessoreComb/ROYELTOOTH.webp",
+        "/assets/uploads/jessoreComb/2NOTT8DBOX..webp",
+        "/assets/uploads/jessoreComb/37NOBTT.webp",
+        "/assets/uploads/jessoreComb/33no.webp",
+        "/assets/uploads/jessoreComb/8NOJESSORE.webp"
       ],
       products: [
-        { name: "24 NO BM", quantity: "JESSORE COMB", price: "₹46.00", img: "/assets/uploads/jessoreComb/24nobm.png" },
-        { name: "1 NO MOTA", quantity: "JESSORE COMB", price: "₹56.00", img: "/assets/uploads/jessoreComb/1NOMOTA.png" },
-        { name: "SP T. T", quantity: "JESSORE COMB", price: "₹90.00", img: "/assets/uploads/jessoreComb/SPTT.png" },
-        { name: "7 NO T.T", quantity: "JESSORE COMB", price: "₹102.00", img: "/assets/uploads/jessoreComb/7NOTT.png" },
-        { name: "2 NO T.T", quantity: "JESSORE COMB", price: "₹64.00", img: "/assets/uploads/jessoreComb/2NOTT.png" },
-        { name: "24 NO (P)", quantity: "JESSORE COMB", price: "₹42.00", img: "/assets/uploads/jessoreComb/24NO(P).png" },
-        { name: "ROYEL TOOTH", quantity: "JESSORE COMB", price: "₹66.00", img: "/assets/uploads/jessoreComb/ROYELTOOTH.png" },
-        { name: "2 NO T.T", quantity: "8D BOX. JESSORE COMB", price: "₹63.00", img: "/assets/uploads/jessoreComb/2NOTT8DBOX..png" },
-        { name: "37 NO B.T. T", quantity: "17D BOX. JESSORE COMB", price: "₹27.00", img: "/assets/uploads/jessoreComb/37NOBTT.png" },
-        { name: "33 NO", quantity: "9D BOX. JESSORE COMB", price: "₹39.00", img: "/assets/uploads/jessoreComb/33no.png" },
-        { name: "8 NO JESSORE", quantity: "JESSORE COMB", price: "₹48.00", img: "/assets/uploads/jessoreComb/8NOJESSORE.png" }
+        { name: "24 NO BM", quantity: "JESSORE COMB", price: "₹46.00", img: "/assets/uploads/jessoreComb/24nobm.webp" },
+        { name: "1 NO MOTA", quantity: "JESSORE COMB", price: "₹56.00", img: "/assets/uploads/jessoreComb/1NOMOTA.webp" },
+        { name: "SP T. T", quantity: "JESSORE COMB", price: "₹90.00", img: "/assets/uploads/jessoreComb/SPTT.webp" },
+        { name: "7 NO T.T", quantity: "JESSORE COMB", price: "₹102.00", img: "/assets/uploads/jessoreComb/7NOTT.webp" },
+        { name: "2 NO T.T", quantity: "JESSORE COMB", price: "₹64.00", img: "/assets/uploads/jessoreComb/2NOTT.webp" },
+        { name: "24 NO (P)", quantity: "JESSORE COMB", price: "₹42.00", img: "/assets/uploads/jessoreComb/24NO(P).webp" },
+        { name: "ROYEL TOOTH", quantity: "JESSORE COMB", price: "₹66.00", img: "/assets/uploads/jessoreComb/ROYELTOOTH.webp" },
+        { name: "2 NO T.T", quantity: "8D BOX. JESSORE COMB", price: "₹63.00", img: "/assets/uploads/jessoreComb/2NOTT8DBOX..webp" },
+        { name: "37 NO B.T. T", quantity: "17D BOX. JESSORE COMB", price: "₹27.00", img: "/assets/uploads/jessoreComb/37NOBTT.webp" },
+        { name: "33 NO", quantity: "9D BOX. JESSORE COMB", price: "₹39.00", img: "/assets/uploads/jessoreComb/33no.webp" },
+        { name: "8 NO JESSORE", quantity: "JESSORE COMB", price: "₹48.00", img: "/assets/uploads/jessoreComb/8NOJESSORE.webp" }
       ]
     },
     "hair-comb": {
       title: "Hair Comb Manufacturers",
       desc: "<p><strong>Loke Nath Comb Factory</strong> produces a wide variety of robust everyday hair combs crafted with rounded teeth for scalp comfort.</p>",
       specs: "Material: High Quality Plastic | Teeth: Smooth Rounded | Colors: Multi-color options",
-      images: ["/assets/uploads/banner/img3.png"],
+      images: ["/assets/uploads/banner/img3.webp"],
       products: [
-        { name: "Standard Family Comb", size: "20 CM", weight: "16 Grams", img: "/assets/uploads/banner/img3.png" },
-        { name: "Wide Tooth Styling Comb", size: "19 CM", weight: "15 Grams", img: "/assets/uploads/banner/img3.png" }
+        { name: "Standard Family Comb", size: "20 CM", weight: "16 Grams", img: "/assets/uploads/banner/img3.webp" },
+        { name: "Wide Tooth Styling Comb", size: "19 CM", weight: "15 Grams", img: "/assets/uploads/banner/img3.webp" }
       ]
     },
     "jessore-fancy": {
@@ -843,38 +843,38 @@ function initProductModals() {
       desc: "<p><strong>Loke Nath Comb Factory</strong> is the leading manufacturer of <strong>Jessore New Fancy Combs</strong> in Bongaon, West Bengal. Crafted with modern aesthetic designs, vibrant dual-tone shades, and ultra-smooth polished teeth for premium hair grooming.</p><p>Browse our complete live catalog on WhatsApp (<a href='https://wa.me/c/218601520894144' target='_blank' class='text-brand-primary font-bold underline'>View WhatsApp Catalog</a>).</p>",
       specs: "Material: High-Gloss Polymer & Virgin Plastic | Style: New Fancy Designer Finish | Teeth: Anti-Static Fine & Medium Teeth",
       images: [
-        "/assets/uploads/jessor-newfancy/01.png",
-        "/assets/uploads/jessor-newfancy/02.png",
-        "/assets/uploads/jessor-newfancy/03.png",
-        "/assets/uploads/jessor-newfancy/04.png",
-        "/assets/uploads/jessor-newfancy/05.png",
-        "/assets/uploads/jessor-newfancy/06.png",
-        "/assets/uploads/jessor-newfancy/07.png",
-        "/assets/uploads/jessor-newfancy/08.png",
-        "/assets/uploads/jessor-newfancy/09.png",
-        "/assets/uploads/jessor-newfancy/10.png",
-        "/assets/uploads/jessor-newfancy/11.png",
-        "/assets/uploads/jessor-newfancy/12.png",
-        "/assets/uploads/jessor-newfancy/14.png",
-        "/assets/uploads/jessor-newfancy/splong.png",
-        "/assets/uploads/jessor-newfancy/15.png"
+        "/assets/uploads/jessor-newfancy/01.webp",
+        "/assets/uploads/jessor-newfancy/02.webp",
+        "/assets/uploads/jessor-newfancy/03.webp",
+        "/assets/uploads/jessor-newfancy/04.webp",
+        "/assets/uploads/jessor-newfancy/05.webp",
+        "/assets/uploads/jessor-newfancy/06.webp",
+        "/assets/uploads/jessor-newfancy/07.webp",
+        "/assets/uploads/jessor-newfancy/08.webp",
+        "/assets/uploads/jessor-newfancy/09.webp",
+        "/assets/uploads/jessor-newfancy/10.webp",
+        "/assets/uploads/jessor-newfancy/11.webp",
+        "/assets/uploads/jessor-newfancy/12.webp",
+        "/assets/uploads/jessor-newfancy/14.webp",
+        "/assets/uploads/jessor-newfancy/splong.webp",
+        "/assets/uploads/jessor-newfancy/15.webp"
       ],
       products: [
-        { name: "1 NO FANCY", quantity: "120 Dz", price: "₹120.00", img: "/assets/uploads/jessor-newfancy/01.png" },
-        { name: "2 NO FANCY", quantity: "136 Dz.", price: "₹136.00", img: "/assets/uploads/jessor-newfancy/02.png" },
-        { name: "3 NO FANCY", quantity: "121 Dz.", price: "₹121.00", img: "/assets/uploads/jessor-newfancy/03.png" },
-        { name: "4 NO FANCY", quantity: "121 Dz.", price: "₹121.00", img: "/assets/uploads/jessor-newfancy/04.png" },
-        { name: "5 NO FANCY", quantity: "152 Dz.", price: "₹152.00", img: "/assets/uploads/jessor-newfancy/05.png" },
-        { name: "6 NO FANCY", quantity: "136 Dz.", price: "₹136.00", img: "/assets/uploads/jessor-newfancy/06.png" },
-        { name: "7 NO FANCY", quantity: "172 Dz. Big Size", price: "₹172.00", img: "/assets/uploads/jessor-newfancy/07.png" },
-        { name: "8 NO FANCY", quantity: "197 Dz. wait full", price: "₹197.00", img: "/assets/uploads/jessor-newfancy/08.png" },
-        { name: "9 NO FANCY", quantity: "120 Dz.", price: "₹120.00", img: "/assets/uploads/jessor-newfancy/09.png" },
-        { name: "10 NO FANCY", quantity: "120 Dz.", price: "₹120.00", img: "/assets/uploads/jessor-newfancy/10.png" },
-        { name: "11 NO FANCY", quantity: "128 Dz.", price: "₹128.00", img: "/assets/uploads/jessor-newfancy/11.png" },
-        { name: "12 NO FANCY", quantity: "132 Dz.", price: "₹132.00", img: "/assets/uploads/jessor-newfancy/12.png" },
-        { name: "14 NO FANCY", quantity: "138 Dz", price: "₹138.00", img: "/assets/uploads/jessor-newfancy/14.png" },
-        { name: "SP LONG", quantity: "110 Dz.", price: "₹110.00", img: "/assets/uploads/jessor-newfancy/splong.png" },
-        { name: "15 NO F/C", quantity: "162 Dz.", price: "₹162.00", img: "/assets/uploads/jessor-newfancy/15.png" }
+        { name: "1 NO FANCY", quantity: "120 Dz", price: "₹120.00", img: "/assets/uploads/jessor-newfancy/01.webp" },
+        { name: "2 NO FANCY", quantity: "136 Dz.", price: "₹136.00", img: "/assets/uploads/jessor-newfancy/02.webp" },
+        { name: "3 NO FANCY", quantity: "121 Dz.", price: "₹121.00", img: "/assets/uploads/jessor-newfancy/03.webp" },
+        { name: "4 NO FANCY", quantity: "121 Dz.", price: "₹121.00", img: "/assets/uploads/jessor-newfancy/04.webp" },
+        { name: "5 NO FANCY", quantity: "152 Dz.", price: "₹152.00", img: "/assets/uploads/jessor-newfancy/05.webp" },
+        { name: "6 NO FANCY", quantity: "136 Dz.", price: "₹136.00", img: "/assets/uploads/jessor-newfancy/06.webp" },
+        { name: "7 NO FANCY", quantity: "172 Dz. Big Size", price: "₹172.00", img: "/assets/uploads/jessor-newfancy/07.webp" },
+        { name: "8 NO FANCY", quantity: "197 Dz. wait full", price: "₹197.00", img: "/assets/uploads/jessor-newfancy/08.webp" },
+        { name: "9 NO FANCY", quantity: "120 Dz.", price: "₹120.00", img: "/assets/uploads/jessor-newfancy/09.webp" },
+        { name: "10 NO FANCY", quantity: "120 Dz.", price: "₹120.00", img: "/assets/uploads/jessor-newfancy/10.webp" },
+        { name: "11 NO FANCY", quantity: "128 Dz.", price: "₹128.00", img: "/assets/uploads/jessor-newfancy/11.webp" },
+        { name: "12 NO FANCY", quantity: "132 Dz.", price: "₹132.00", img: "/assets/uploads/jessor-newfancy/12.webp" },
+        { name: "14 NO FANCY", quantity: "138 Dz", price: "₹138.00", img: "/assets/uploads/jessor-newfancy/14.webp" },
+        { name: "SP LONG", quantity: "110 Dz.", price: "₹110.00", img: "/assets/uploads/jessor-newfancy/splong.webp" },
+        { name: "15 NO F/C", quantity: "162 Dz.", price: "₹162.00", img: "/assets/uploads/jessor-newfancy/15.webp" }
       ]
     }
   };
@@ -892,7 +892,7 @@ function initProductModals() {
     // Image Auto-Slider logic
     if (imageAutoTimer) clearInterval(imageAutoTimer);
     let imgIdx = 0;
-    const imgList = data.images && data.images.length > 0 ? data.images : ["/assets/uploads/banner/img3.png"];
+    const imgList = data.images && data.images.length > 0 ? data.images : ["/assets/uploads/banner/img3.webp"];
     if (modalImg) modalImg.src = imgList[0];
 
     if (imgList.length > 1) {
@@ -1045,38 +1045,38 @@ function initProductDetailPage() {
       desc: "<p><strong>Loke Nath Comb Factory</strong> is the leading manufacturer of <strong>Jessore New Fancy Combs</strong> in Bongaon, West Bengal. Crafted with modern aesthetic designs, vibrant dual-tone shades, and ultra-smooth polished teeth for premium hair grooming.</p><p>Browse our complete live catalog on WhatsApp (<a href='https://wa.me/c/218601520894144' target='_blank' class='text-brand-primary font-bold underline'>View WhatsApp Catalog</a>).</p>",
       specs: "Material: High-Gloss Polymer & Virgin Plastic | Style: New Fancy Designer Finish | Teeth: Anti-Static Fine & Medium Teeth",
       images: [
-        "/assets/uploads/jessor-newfancy/01.png",
-        "/assets/uploads/jessor-newfancy/02.png",
-        "/assets/uploads/jessor-newfancy/03.png",
-        "/assets/uploads/jessor-newfancy/04.png",
-        "/assets/uploads/jessor-newfancy/05.png",
-        "/assets/uploads/jessor-newfancy/06.png",
-        "/assets/uploads/jessor-newfancy/07.png",
-        "/assets/uploads/jessor-newfancy/08.png",
-        "/assets/uploads/jessor-newfancy/09.png",
-        "/assets/uploads/jessor-newfancy/10.png",
-        "/assets/uploads/jessor-newfancy/11.png",
-        "/assets/uploads/jessor-newfancy/12.png",
-        "/assets/uploads/jessor-newfancy/14.png",
-        "/assets/uploads/jessor-newfancy/splong.png",
-        "/assets/uploads/jessor-newfancy/15.png"
+        "/assets/uploads/jessor-newfancy/01.webp",
+        "/assets/uploads/jessor-newfancy/02.webp",
+        "/assets/uploads/jessor-newfancy/03.webp",
+        "/assets/uploads/jessor-newfancy/04.webp",
+        "/assets/uploads/jessor-newfancy/05.webp",
+        "/assets/uploads/jessor-newfancy/06.webp",
+        "/assets/uploads/jessor-newfancy/07.webp",
+        "/assets/uploads/jessor-newfancy/08.webp",
+        "/assets/uploads/jessor-newfancy/09.webp",
+        "/assets/uploads/jessor-newfancy/10.webp",
+        "/assets/uploads/jessor-newfancy/11.webp",
+        "/assets/uploads/jessor-newfancy/12.webp",
+        "/assets/uploads/jessor-newfancy/14.webp",
+        "/assets/uploads/jessor-newfancy/splong.webp",
+        "/assets/uploads/jessor-newfancy/15.webp"
       ],
       products: [
-        { name: "1 NO FANCY", quantity: "120 Dz", price: "₹120.00", img: "/assets/uploads/jessor-newfancy/01.png" },
-        { name: "2 NO FANCY", quantity: "136 Dz.", price: "₹136.00", img: "/assets/uploads/jessor-newfancy/02.png" },
-        { name: "3 NO FANCY", quantity: "121 Dz.", price: "₹121.00", img: "/assets/uploads/jessor-newfancy/03.png" },
-        { name: "4 NO FANCY", quantity: "121 Dz.", price: "₹121.00", img: "/assets/uploads/jessor-newfancy/04.png" },
-        { name: "5 NO FANCY", quantity: "152 Dz.", price: "₹152.00", img: "/assets/uploads/jessor-newfancy/05.png" },
-        { name: "6 NO FANCY", quantity: "136 Dz.", price: "₹136.00", img: "/assets/uploads/jessor-newfancy/06.png" },
-        { name: "7 NO FANCY", quantity: "172 Dz. Big Size", price: "₹172.00", img: "/assets/uploads/jessor-newfancy/07.png" },
-        { name: "8 NO FANCY", quantity: "197 Dz. wait full", price: "₹197.00", img: "/assets/uploads/jessor-newfancy/08.png" },
-        { name: "9 NO FANCY", quantity: "120 Dz.", price: "₹120.00", img: "/assets/uploads/jessor-newfancy/09.png" },
-        { name: "10 NO FANCY", quantity: "120 Dz.", price: "₹120.00", img: "/assets/uploads/jessor-newfancy/10.png" },
-        { name: "11 NO FANCY", quantity: "128 Dz.", price: "₹128.00", img: "/assets/uploads/jessor-newfancy/11.png" },
-        { name: "12 NO FANCY", quantity: "132 Dz.", price: "₹132.00", img: "/assets/uploads/jessor-newfancy/12.png" },
-        { name: "14 NO FANCY", quantity: "138 Dz", price: "₹138.00", img: "/assets/uploads/jessor-newfancy/14.png" },
-        { name: "SP LONG", quantity: "110 Dz.", price: "₹110.00", img: "/assets/uploads/jessor-newfancy/splong.png" },
-        { name: "15 NO F/C", quantity: "162 Dz.", price: "₹162.00", img: "/assets/uploads/jessor-newfancy/15.png" }
+        { name: "1 NO FANCY", quantity: "120 Dz", price: "₹120.00", img: "/assets/uploads/jessor-newfancy/01.webp" },
+        { name: "2 NO FANCY", quantity: "136 Dz.", price: "₹136.00", img: "/assets/uploads/jessor-newfancy/02.webp" },
+        { name: "3 NO FANCY", quantity: "121 Dz.", price: "₹121.00", img: "/assets/uploads/jessor-newfancy/03.webp" },
+        { name: "4 NO FANCY", quantity: "121 Dz.", price: "₹121.00", img: "/assets/uploads/jessor-newfancy/04.webp" },
+        { name: "5 NO FANCY", quantity: "152 Dz.", price: "₹152.00", img: "/assets/uploads/jessor-newfancy/05.webp" },
+        { name: "6 NO FANCY", quantity: "136 Dz.", price: "₹136.00", img: "/assets/uploads/jessor-newfancy/06.webp" },
+        { name: "7 NO FANCY", quantity: "172 Dz. Big Size", price: "₹172.00", img: "/assets/uploads/jessor-newfancy/07.webp" },
+        { name: "8 NO FANCY", quantity: "197 Dz. wait full", price: "₹197.00", img: "/assets/uploads/jessor-newfancy/08.webp" },
+        { name: "9 NO FANCY", quantity: "120 Dz.", price: "₹120.00", img: "/assets/uploads/jessor-newfancy/09.webp" },
+        { name: "10 NO FANCY", quantity: "120 Dz.", price: "₹120.00", img: "/assets/uploads/jessor-newfancy/10.webp" },
+        { name: "11 NO FANCY", quantity: "128 Dz.", price: "₹128.00", img: "/assets/uploads/jessor-newfancy/11.webp" },
+        { name: "12 NO FANCY", quantity: "132 Dz.", price: "₹132.00", img: "/assets/uploads/jessor-newfancy/12.webp" },
+        { name: "14 NO FANCY", quantity: "138 Dz", price: "₹138.00", img: "/assets/uploads/jessor-newfancy/14.webp" },
+        { name: "SP LONG", quantity: "110 Dz.", price: "₹110.00", img: "/assets/uploads/jessor-newfancy/splong.webp" },
+        { name: "15 NO F/C", quantity: "162 Dz.", price: "₹162.00", img: "/assets/uploads/jessor-newfancy/15.webp" }
       ]
     },
     "jessore-comb": {
@@ -1084,60 +1084,71 @@ function initProductDetailPage() {
       desc: "<p><strong>Loke Nath Comb Factory</strong> is the wholesale manufacturer of authentic <strong>Jessore Combs</strong> in Bongaon & West Bengal. Our classic Jessore collection features precision smooth teeth, high durability, and scalp massage tips.</p><p>Browse our complete live catalog on WhatsApp (<a href='https://wa.me/c/218601520894144' target='_blank' class='text-brand-primary font-bold underline'>View WhatsApp Catalog</a>).</p>",
       specs: "Material: Premium High-Density Polymer & Neem | Style: Classic Jessore Design | Live Catalog: wa.me/c/218601520894144",
       images: [
-        "/assets/uploads/jessoreComb/24nobm.png",
-        "/assets/uploads/jessoreComb/1NOMOTA.png",
-        "/assets/uploads/jessoreComb/SPTT.png",
-        "/assets/uploads/jessoreComb/7NOTT.png",
-        "/assets/uploads/jessoreComb/2NOTT.png",
-        "/assets/uploads/jessoreComb/24NO(P).png",
-        "/assets/uploads/jessoreComb/ROYELTOOTH.png",
-        "/assets/uploads/jessoreComb/2NOTT8DBOX..png",
-        "/assets/uploads/jessoreComb/37NOBTT.png",
-        "/assets/uploads/jessoreComb/33no.png",
-        "/assets/uploads/jessoreComb/8NOJESSORE.png"
+        "/assets/uploads/jessoreComb/24nobm.webp",
+        "/assets/uploads/jessoreComb/1NOMOTA.webp",
+        "/assets/uploads/jessoreComb/SPTT.webp",
+        "/assets/uploads/jessoreComb/7NOTT.webp",
+        "/assets/uploads/jessoreComb/2NOTT.webp",
+        "/assets/uploads/jessoreComb/24NO(P).webp",
+        "/assets/uploads/jessoreComb/ROYELTOOTH.webp",
+        "/assets/uploads/jessoreComb/2NOTT8DBOX..webp",
+        "/assets/uploads/jessoreComb/37NOBTT.webp",
+        "/assets/uploads/jessoreComb/33no.webp",
+        "/assets/uploads/jessoreComb/8NOJESSORE.webp"
       ],
       products: [
-        { name: "24 NO BM", quantity: "JESSORE COMB", price: "₹46.00", img: "/assets/uploads/jessoreComb/24nobm.png" },
-        { name: "1 NO MOTA", quantity: "JESSORE COMB", price: "₹56.00", img: "/assets/uploads/jessoreComb/1NOMOTA.png" },
-        { name: "SP T. T", quantity: "JESSORE COMB", price: "₹90.00", img: "/assets/uploads/jessoreComb/SPTT.png" },
-        { name: "7 NO T.T", quantity: "JESSORE COMB", price: "₹102.00", img: "/assets/uploads/jessoreComb/7NOTT.png" },
-        { name: "2 NO T.T", quantity: "JESSORE COMB", price: "₹64.00", img: "/assets/uploads/jessoreComb/2NOTT.png" },
-        { name: "24 NO (P)", quantity: "JESSORE COMB", price: "₹42.00", img: "/assets/uploads/jessoreComb/24NO(P).png" },
-        { name: "ROYEL TOOTH", quantity: "JESSORE COMB", price: "₹66.00", img: "/assets/uploads/jessoreComb/ROYELTOOTH.png" },
-        { name: "2 NO T.T", quantity: "8D BOX. JESSORE COMB", price: "₹63.00", img: "/assets/uploads/jessoreComb/2NOTT8DBOX..png" },
-        { name: "37 NO B.T. T", quantity: "17D BOX. JESSORE COMB", price: "₹27.00", img: "/assets/uploads/jessoreComb/37NOBTT.png" },
-        { name: "33 NO", quantity: "9D BOX. JESSORE COMB", price: "₹39.00", img: "/assets/uploads/jessoreComb/33no.png" },
-        { name: "8 NO JESSORE", quantity: "JESSORE COMB", price: "₹48.00", img: "/assets/uploads/jessoreComb/8NOJESSORE.png" }
+        { name: "24 NO BM", quantity: "JESSORE COMB", price: "₹46.00", img: "/assets/uploads/jessoreComb/24nobm.webp" },
+        { name: "1 NO MOTA", quantity: "JESSORE COMB", price: "₹56.00", img: "/assets/uploads/jessoreComb/1NOMOTA.webp" },
+        { name: "SP T. T", quantity: "JESSORE COMB", price: "₹90.00", img: "/assets/uploads/jessoreComb/SPTT.webp" },
+        { name: "7 NO T.T", quantity: "JESSORE COMB", price: "₹102.00", img: "/assets/uploads/jessoreComb/7NOTT.webp" },
+        { name: "2 NO T.T", quantity: "JESSORE COMB", price: "₹64.00", img: "/assets/uploads/jessoreComb/2NOTT.webp" },
+        { name: "24 NO (P)", quantity: "JESSORE COMB", price: "₹42.00", img: "/assets/uploads/jessoreComb/24NO(P).webp" },
+        { name: "ROYEL TOOTH", quantity: "JESSORE COMB", price: "₹66.00", img: "/assets/uploads/jessoreComb/ROYELTOOTH.webp" },
+        { name: "2 NO T.T", quantity: "8D BOX. JESSORE COMB", price: "₹63.00", img: "/assets/uploads/jessoreComb/2NOTT8DBOX..webp" },
+        { name: "37 NO B.T. T", quantity: "17D BOX. JESSORE COMB", price: "₹27.00", img: "/assets/uploads/jessoreComb/37NOBTT.webp" },
+        { name: "33 NO", quantity: "9D BOX. JESSORE COMB", price: "₹39.00", img: "/assets/uploads/jessoreComb/33no.webp" },
+        { name: "8 NO JESSORE", quantity: "JESSORE COMB", price: "₹48.00", img: "/assets/uploads/jessoreComb/8NOJESSORE.webp" }
       ]
     },
     "plastic-jessore-tooth": {
       title: "Plastic Jessore Tooth Comb Manufacturers",
       desc: "<p><strong>Loke Nath Comb Factory</strong> produces heavy-duty <strong>Plastic Jessore Tooth Combs</strong> with extra-wide and fine tooth spacing engineered for smooth hair detangling without pulling or breakage.</p>",
-      specs: "Teeth Structure: Wide & Fine Dual Gap | Material: Virgin High-Impact Plastic | Color Options: Black, Amber, Pastel",
-      images: ["/assets/uploads/banner/img4.png", "/assets/uploads/banner/img3.png"],
+      specs: "Teeth Structure: Wide & Fine Dual Gap | Material: Virgin High-Impact Plastic | Packaging: Box Pack",
+      images: [
+        "/assets/uploads/jessoretoothcomb/75no.webp",
+        "/assets/uploads/jessoretoothcomb/SOLONJESSORE.(Coco).webp",
+        "/assets/uploads/jessoretoothcomb/45no.webp",
+        "/assets/uploads/jessoretoothcomb/Lotuscomb.webp",
+        "/assets/uploads/jessoretoothcomb/30no.webp",
+        "/assets/uploads/jessoretoothcomb/blackstar.webp"
+      ],
       products: [
-        { name: "Wide Tooth Jessore", size: "21 CM", weight: "18.2 Grams", img: "/assets/uploads/banner/img4.png" },
-        { name: "Dual Tooth Jessore Pro", size: "22 CM", weight: "20 Grams", img: "/assets/uploads/banner/img3.png" }
+        { name: "NO 75 COOL", quantity: "16D BOX.", price: "₹33.00", img: "/assets/uploads/jessoretoothcomb/75no.webp" },
+        { name: "SOLON JESSORE (COCO)", quantity: "18D BOX.", price: "₹20.00", img: "/assets/uploads/jessoretoothcomb/SOLONJESSORE.(Coco).webp" },
+        { name: "45 NO COOL", quantity: "18D BOX.", price: "₹20.00", img: "/assets/uploads/jessoretoothcomb/45no.webp" },
+        { name: "LOTUS JESSORE COMB", quantity: "18D BOX", price: "₹20.00", img: "/assets/uploads/jessoretoothcomb/Lotuscomb.webp" },
+        { name: "30 NO", quantity: "12D BOX.", price: "₹42.00", img: "/assets/uploads/jessoretoothcomb/30no.webp" },
+        { name: "BLACK STAR", quantity: "10D BOX.", price: "₹36.00", img: "/assets/uploads/jessoretoothcomb/blackstar.webp" }
       ]
     },
     "plastic-box": {
       title: "Plastic Box Comb Manufacturers",
       desc: "<p><strong>Loke Nath Comb Factory</strong> supplies wholesale <strong>Plastic Box Combs</strong> in individual and bulk boxed sets packaged for retail stores, supermarkets, and hotel distribution.</p>",
       specs: "Packaging: Individual Box / Display Master Carton | Material: Durable Virgin Polypropylene",
-      images: ["/assets/uploads/banner/img1.png", "/assets/uploads/banner/img2.png"],
+      images: ["/assets/uploads/banner/img1.webp", "/assets/uploads/banner/img2.webp"],
       products: [
-        { name: "Boxed Retail Pack Comb", size: "20 CM", weight: "19 Grams", img: "/assets/uploads/banner/img1.png" },
-        { name: "Master Box 12-Pack", size: "Mixed 18-22 CM", weight: "240 Grams Box", img: "/assets/uploads/banner/img2.png" }
+        { name: "Boxed Retail Pack Comb", size: "20 CM", weight: "19 Grams", img: "/assets/uploads/banner/img1.webp" },
+        { name: "Master Box 12-Pack", size: "Mixed 18-22 CM", weight: "240 Grams Box", img: "/assets/uploads/banner/img2.webp" }
       ]
     },
     "plastic-pitta": {
       title: "Plastic PITTA Comb Manufacturers",
       desc: "<p><strong>Loke Nath Comb Factory</strong> is the leading manufacturer of high-precision <strong>Plastic PITTA Combs</strong> crafted with rigid backbones, fine teeth alignment, and daily scalp care ergonomics.</p>",
       specs: "Style: PITTA Pattern Hair Comb | Material: Rigid Poly-Acetate | Anti-Static: Yes",
-      images: ["/assets/uploads/banner/img3.png"],
+      images: ["/assets/uploads/banner/img3.webp"],
       products: [
-        { name: "Standard PITTA Comb", size: "20 CM", weight: "17 Grams", img: "/assets/uploads/banner/img3.png" },
-        { name: "Heavy Duty PITTA Pro", size: "22 CM", weight: "21 Grams", img: "/assets/uploads/banner/img1.png" }
+        { name: "Standard PITTA Comb", size: "20 CM", weight: "17 Grams", img: "/assets/uploads/banner/img3.webp" },
+        { name: "Heavy Duty PITTA Pro", size: "22 CM", weight: "21 Grams", img: "/assets/uploads/banner/img1.webp" }
       ]
     },
     "neem-wooden": {
@@ -1145,65 +1156,70 @@ function initProductDetailPage() {
       desc: "<p><strong>Loke Nath Comb Factory</strong> is the Premier <strong>Neem Wood Fancy Box Comb Manufacturer</strong> in Bongaon, West Bengal. Handcrafted from 100% natural Neem Wood to condition hair naturally and massage scalp follicles.</p>",
       specs: "Material: 100% Natural Neem Wood | Anti-Static: 100% | Teeth: Polished Smooth Rounded Tips",
       images: [
-        "/assets/uploads/neem-wood/01.png",
-        "/assets/uploads/neem-wood/02.png",
-        "/assets/uploads/neem-wood/03.png",
-        "/assets/uploads/neem-wood/04.png",
-        "/assets/uploads/neem-wood/05.png",
-        "/assets/uploads/neem-wood/06.png",
-        "/assets/uploads/neem-wood/07.png",
-        "/assets/uploads/neem-wood/08.png"
+        "/assets/uploads/neem-wood/01.webp",
+        "/assets/uploads/neem-wood/02.webp",
+        "/assets/uploads/neem-wood/03.webp",
+        "/assets/uploads/neem-wood/04.webp",
+        "/assets/uploads/neem-wood/05.webp",
+        "/assets/uploads/neem-wood/06.webp",
+        "/assets/uploads/neem-wood/07.webp",
+        "/assets/uploads/neem-wood/08.webp"
       ],
       products: [
-        { name: "NO 1 (NEEM WOOD COMB)", quantity: "Rs 30 pic's (20 pic's Box)", price: "₹30.00", img: "/assets/uploads/neem-wood/01.png" },
-        { name: "NO 2 (NEEM WOOD COMB)", quantity: "Rs 30 pic's (20 pic's Box)", price: "₹30.00", img: "/assets/uploads/neem-wood/02.png" },
-        { name: "NO 3 (NEEM WOOD COMB)", quantity: "Rs 30 pic's (20 pic's Box)", price: "₹30.00", img: "/assets/uploads/neem-wood/03.png" },
-        { name: "NO 4 (NEEM WOOD COMB)", quantity: "Rs 30 pic's (20 pic's Box)", price: "₹30.00", img: "/assets/uploads/neem-wood/04.png" },
-        { name: "NO 5 (NEEM WOOD COMB)", quantity: "Rs 30 pic's (20 pic's Box)", price: "₹30.00", img: "/assets/uploads/neem-wood/05.png" },
-        { name: "NO 6 (NEEM WOOD COMB)", quantity: "Rs 30 pic's (20 pic's Box)", price: "₹30.00", img: "/assets/uploads/neem-wood/06.png" },
-        { name: "NO 7 (NEEM WOOD COMB)", quantity: "Rs 30 pic's (20 pic's Box)", price: "₹30.00", img: "/assets/uploads/neem-wood/07.png" },
-        { name: "NO 8 (NEEM WOOD COMB)", quantity: "Rs 30 pic's (20 pic's Box)", price: "₹30.00", img: "/assets/uploads/neem-wood/08.png" }
+        { name: "NO 1 (NEEM WOOD COMB)", quantity: "Rs 30 pic's (20 pic's Box)", price: "₹30.00", img: "/assets/uploads/neem-wood/01.webp" },
+        { name: "NO 2 (NEEM WOOD COMB)", quantity: "Rs 30 pic's (20 pic's Box)", price: "₹30.00", img: "/assets/uploads/neem-wood/02.webp" },
+        { name: "NO 3 (NEEM WOOD COMB)", quantity: "Rs 30 pic's (20 pic's Box)", price: "₹30.00", img: "/assets/uploads/neem-wood/03.webp" },
+        { name: "NO 4 (NEEM WOOD COMB)", quantity: "Rs 30 pic's (20 pic's Box)", price: "₹30.00", img: "/assets/uploads/neem-wood/04.webp" },
+        { name: "NO 5 (NEEM WOOD COMB)", quantity: "Rs 30 pic's (20 pic's Box)", price: "₹30.00", img: "/assets/uploads/neem-wood/05.webp" },
+        { name: "NO 6 (NEEM WOOD COMB)", quantity: "Rs 30 pic's (20 pic's Box)", price: "₹30.00", img: "/assets/uploads/neem-wood/06.webp" },
+        { name: "NO 7 (NEEM WOOD COMB)", quantity: "Rs 30 pic's (20 pic's Box)", price: "₹30.00", img: "/assets/uploads/neem-wood/07.webp" },
+        { name: "NO 8 (NEEM WOOD COMB)", quantity: "Rs 30 pic's (20 pic's Box)", price: "₹30.00", img: "/assets/uploads/neem-wood/08.webp" }
       ]
     },
     "plastic-razor": {
       title: "Plastic Razor & Barber Accessories",
       desc: "<p><strong>Loke Nath Comb Factory</strong> manufactures ergonomic <strong>Plastic Barber Razors</strong> and grooming accessories designed for barber shops, personal grooming, and salons.</p>",
       specs: "Material: High-Density ABS & Stainless Steel Holder | Ergonomics: Non-Slip Folding Handle",
-      images: ["/assets/uploads/banner/img4.png"],
+      images: ["/assets/uploads/banner/img4.webp"],
       products: [
-        { name: "Barber Folding Plastic Razor", size: "15 CM", weight: "22 Grams", img: "/assets/uploads/banner/img4.png" },
-        { name: "Salon Shaving Razor Grip", size: "16 CM", weight: "24 Grams", img: "/assets/uploads/banner/img4.png" }
+        { name: "Barber Folding Plastic Razor", size: "15 CM", weight: "22 Grams", img: "/assets/uploads/banner/img4.webp" },
+        { name: "Salon Shaving Razor Grip", size: "16 CM", weight: "24 Grams", img: "/assets/uploads/banner/img4.webp" }
       ]
     },
     "shikha-kangha": {
-      title: "Shikha Kangha Set Manufacturers",
-      desc: "<p><strong>Loke Nath Comb Factory</strong> produces authentic traditional <strong>Shikha Kangha Sets</strong> crafted according to traditional cultural guidelines for daily wear and hair hygiene.</p>",
-      specs: "Set Type: Traditional Kangha Comb | Material: High Grade Polymer / Eco Neem Wood | Polish: Smooth Non-Scratch Edges",
-      images: ["/assets/uploads/banner/img1.png", "/assets/uploads/banner/img2.png"],
+      title: "Shisha Kanga Set Manufacturers",
+      desc: "<p><strong>Loke Nath Comb Factory</strong> produces authentic traditional <strong>Shisha Kanga Sets</strong> crafted for daily hair care, mirror sets, and grooming utility packs.</p>",
+      specs: "Set Type: Shisha Kanga Set | Packaging: Box Pack",
+      images: [
+        "/assets/uploads/shikha-kanga-set/1no.webp",
+        "/assets/uploads/shikha-kanga-set/2no.webp",
+        "/assets/uploads/shikha-kanga-set/3no.webp"
+      ],
       products: [
-        { name: "Traditional Shikha Kangha", size: "7 CM", weight: "8 Grams", img: "/assets/uploads/banner/img1.png" },
-        { name: "Compact Kangha Wooden Set", size: "8 CM", weight: "10 Grams", img: "/assets/uploads/banner/img2.png" }
+        { name: "1 NO", quantity: "Rs 21 pic's", price: "₹21.00", img: "/assets/uploads/shikha-kanga-set/1no.webp" },
+        { name: "2 NO", quantity: "Rs 12 pic's", price: "₹12.00", img: "/assets/uploads/shikha-kanga-set/2no.webp" },
+        { name: "3 No", quantity: "Rs 16 pic's", price: "₹16.00", img: "/assets/uploads/shikha-kanga-set/3no.webp" }
       ]
     },
     "roll-comb": {
       title: "Roll Comb & Round Styling Brushes",
       desc: "<p><strong>Loke Nath Comb Factory</strong> manufactures premium <strong>Roll Combs</strong> (round blow-drying styling brushes) for salons, barbers, and daily hair volume styling.</p>",
       specs: "Type: Round Barrel Roll Comb | Bristles: Heat-Resistant Nylon Ball-Tip | Usage: Blow Drying & Volume Styling",
-      images: ["/assets/uploads/catalog_center_showcase.png"],
+      images: ["/assets/uploads/catalog_center_showcase.webp"],
       products: [
-        { name: "Professional Barrel Roll Comb", size: "23 CM", weight: "55 Grams", img: "/assets/uploads/catalog_center_showcase.png" },
-        { name: "Salon Blow-Dry Roll Comb", size: "24 CM", weight: "62 Grams", img: "/assets/uploads/catalog_center_showcase.png" }
+        { name: "Professional Barrel Roll Comb", size: "23 CM", weight: "55 Grams", img: "/assets/uploads/catalog_center_showcase.webp" },
+        { name: "Salon Blow-Dry Roll Comb", size: "24 CM", weight: "62 Grams", img: "/assets/uploads/catalog_center_showcase.webp" }
       ]
     },
     "ladies": {
       title: "9 Inch Ladies Comb Manufacturers",
       desc: "<p><strong>Loke Nath Comb Factory</strong> is the Reliable <strong>9 Inch Ladies Comb Manufacturer</strong> in Bongaon, West Bengal, India. Our 9-inch ladies' comb features smooth anti-static teeth that glide effortlessly through long or thick hair without causing breakage or scalp discomfort.</p>",
       specs: "Material: Premium Grade Polymer & Acetate | Length: 22 CM | Features: Fine & Wide Teeth Combo | Anti-Static: Yes",
-      images: ["/assets/uploads/banner/img3.png", "/assets/uploads/banner/img1.png"],
+      images: ["/assets/uploads/banner/img3.webp", "/assets/uploads/banner/img1.webp"],
       products: [
-        { name: "Spider", size: "22 CM", weight: "14.7 Grams", img: "/assets/uploads/banner/img3.png" },
-        { name: "Airline", size: "22 CM", weight: "19.7 Grams", img: "/assets/uploads/banner/img1.png" },
-        { name: "Surya", size: "21 CM", weight: "16.7 Grams", img: "/assets/uploads/banner/img4.png" }
+        { name: "Spider", size: "22 CM", weight: "14.7 Grams", img: "/assets/uploads/banner/img3.webp" },
+        { name: "Airline", size: "22 CM", weight: "19.7 Grams", img: "/assets/uploads/banner/img1.webp" },
+        { name: "Surya", size: "21 CM", weight: "16.7 Grams", img: "/assets/uploads/banner/img4.webp" }
       ]
     }
   };
@@ -1221,7 +1237,7 @@ function initProductDetailPage() {
     // Image Auto-Slider logic
     if (pageImgTimer) clearInterval(pageImgTimer);
     let imgIdx = 0;
-    const imgList = data.images && data.images.length > 0 ? data.images : ["/assets/uploads/banner/img3.png"];
+    const imgList = data.images && data.images.length > 0 ? data.images : ["/assets/uploads/banner/img3.webp"];
     if (detailImg) detailImg.src = imgList[0];
 
     if (imgList.length > 1) {
